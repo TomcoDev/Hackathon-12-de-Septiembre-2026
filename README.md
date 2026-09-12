@@ -53,11 +53,15 @@ iba dirigida a él.
 
 ## Demo
 
-Video de dos minutos: **LINK_AL_VIDEO**
+**En vivo: [https://eltestigo.lat](https://eltestigo.lat)** · Video de dos minutos: **LINK_AL_VIDEO**
 
 Lo que se ve: el grupo corriendo un mes acelerado mientras el contador sube y el
 agente no dice nada. Alguien menciona su 1:1. Llega un privado con ocho puntos
 linkeados. La persona borra uno que no quiere llevar.
+
+La pantalla en vivo se puede mirar sin instalar nada. Reproducir el mes y
+resetear están cerrados desde afuera, para que nadie corte el demo a mitad de
+camino; el equipo los habilita entrando una vez a `/desbloquear`.
 
 ## Cómo correrlo
 
