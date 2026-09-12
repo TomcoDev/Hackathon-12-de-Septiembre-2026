@@ -75,7 +75,8 @@ if (bot) {
       id: `m_${ctx.message.message_id}`,
       ts: new Date(ts).toISOString(),
       canal: "#" + slug(ctx.chat.title ?? "grupo"),
-      autor: slug(ctx.from.first_name || ctx.from.username || "", "u" + ctx.from.id),
+      // Nombre -> apellido -> @username -> id. Un nombre de puros emojis cae al siguiente, no al id.
+      autor: slug(ctx.from.first_name ?? "", slug(ctx.from.last_name ?? "", slug(ctx.from.username ?? "", "u" + ctx.from.id))),
       texto: ctx.message.text,
       thread_id: thread,
       link: `https://t.me/c/${String(ctx.chat.id).replace(/^-100/, "")}/${ctx.message.message_id}`,
