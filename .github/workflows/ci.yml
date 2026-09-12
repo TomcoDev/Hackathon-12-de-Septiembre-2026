@@ -1,0 +1,89 @@
+name: CI
+
+# Corre en cada push a main y en cada pull request. Dos trabajos:
+#   secretos  - que no se nos escape una key al repo publico
+#   testigo   - typecheck y la prueba de terminado de P1
+#
+# El deploy NO vive aca. El servidor se actualiza solo cada dos minutos con
+# testigo-deploy.sh, asi no hace falta guardar la clave del servidor en GitHub.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  secretos:
+    name: Nada de credenciales en el repo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ningun .env rastreado
+        run: |
+          if git ls-files | grep -E '(^|/)\.env$|(^|/)\.env\.' | grep -v '\.env\.example'; then
+            echo "::error::hay un .env en el repo"
+            exit 1
+          fi
+          echo "ok: solo .env.example"
+
+      - name: Ningun export real del grupo
+        run: |
+          malos=$(git ls-files 'starter/testigo/data/*.jsonl' \
+            | grep -vE '(ejemplo|seed)\.jsonl$' || true)
+          if [ -n "$malos" ]; then
+            echo "::error::export privado del grupo commiteado: $malos"
+            exit 1
+          fi
+          echo "ok: solo los datasets sinteticos"
+
+      - name: Ninguna key con forma de key
+        run: |
+          patron='sk-[A-Za-z0-9_-]{20,}|tr_(dev|prod)_sk_[A-Za-z0-9]{10,}|[0-9]{8,10}:AA[A-Za-z0-9_-]{30,}'
+          if git grep -nIE "$patron" -- . ':!*.md' ':!.github/workflows/*'; then
+            echo "::error::algo con forma de credencial esta commiteado"
+            exit 1
+          fi
+          echo "ok: sin credenciales"
+
+  testigo:
+    name: EL TESTIGO
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: starter/testigo
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: starter/testigo/package-lock.json
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      # Detector heuristico: no necesita OPENAI_API_KEY y es determinista, que
+      # es justo lo que el primer chequeo mide. GitHub define CI=true solo, y
+      # con eso verificar.ts omite los chequeos de bot y /start.
+      - name: Prueba de terminado
+        env:
+          DETECTOR: heuristico
+        run: npm run verificar
+
+      - name: La pantalla es HTML valido y no perdio sus piezas
+        run: |
+          for f in public/index.html public/index.vanilla.html; do
+            test -s "$f" || { echo "::error::falta $f"; exit 1; }
+          done
+          node --check public/app.js
+          for pieza in 'id="root"' 'vendor/react.min.js' 'vendor/tailwind.js' 'app.js'; do
+            grep -q "$pieza" public/index.html || { echo "::error::index.html no referencia $pieza"; exit 1; }
+          done
+          for v in react.min.js react-dom.min.js htm.umd.js tailwind.js; do
+            test -s "public/vendor/$v" || { echo "::error::falta public/vendor/$v"; exit 1; }
+          done
+          echo "ok: pantalla completa y sin depender de ningun CDN"

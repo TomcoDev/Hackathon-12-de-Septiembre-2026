@@ -48,7 +48,12 @@ check(a.hablo === 1, `habló exactamente una vez${a.disparador ? `, por ${a.disp
 check(a.bullets >= 3, `el DM tiene bullets (${a.bullets})`);
 check(a.anotados < a.leidos * 0.15, `descarta la mayoría (anotó ${a.anotados} de ${a.leidos})`);
 
-try {
+// En CI no hay bot ni server: los dos ultimos chequeos son de entorno, no de
+// codigo, y marcarlos en rojo esconderia una falla de verdad. GitHub Actions
+// define CI=true solo. En la maquina de cualquiera del equipo no cambia nada.
+if (process.env.CI) {
+  console.log("  --    CI: se omiten los chequeos de bot y /start (son de entorno)");
+} else try {
   const h = (await (await fetch("http://localhost:3000/health")).json()) as { bot: boolean; dmPosible: boolean; persona: string };
   check(h.bot, "bot conectado a Telegram (server en :3000)");
   check(h.dmPosible, h.dmPosible ? "alguien le dio /start: el DM llega a Telegram" : "NADIE le dio /start al bot: el DM solo se imprime en consola");
