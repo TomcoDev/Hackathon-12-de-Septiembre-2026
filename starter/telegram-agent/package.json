@@ -1,0 +1,20 @@
+{
+  "name": "telegram-agent",
+  "private": true,
+  "type": "module",
+  "description": "Bot de Telegram mínimo que escucha un grupo. Base para un agente ambiental que interviene por patrón.",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}

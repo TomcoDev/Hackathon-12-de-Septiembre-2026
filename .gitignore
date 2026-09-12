@@ -1,0 +1,32 @@
+# Secretos: NUNCA subir
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+.npm
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Trigger.dev
+.trigger/
+
+# Editores y SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Video crudo (subir solo el link, no el archivo)
+*.mp4
+*.mov
+*.mkv

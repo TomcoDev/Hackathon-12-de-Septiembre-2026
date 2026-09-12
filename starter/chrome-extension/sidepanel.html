@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Agente</title>
+<style>
+  body { font-family: system-ui, sans-serif; font-size: 13px; margin: 0; padding: 12px; color: #1a1a1a; }
+  h1 { font-size: 15px; margin: 0 0 8px; }
+  .muted { color: #666; font-size: 12px; }
+  button { padding: 6px 10px; margin: 6px 4px 6px 0; cursor: pointer; }
+  pre { background: #f4f4f4; padding: 8px; overflow: auto; max-height: 220px; font-size: 11px; }
+  .field { border-bottom: 1px solid #eee; padding: 4px 0; }
+  .field b { display: inline-block; min-width: 90px; }
+  #out { white-space: pre-wrap; background: #f2f9f4; border-left: 3px solid #1e8449; padding: 8px; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h1>🧉 Agente</h1>
+  <div class="muted" id="where">Sin página todavía.</div>
+
+  <button id="refresh">Leer página</button>
+  <button id="run">Analizar con el agente</button>
+
+  <div id="fields"></div>
+  <div id="out" hidden></div>
+
+  <details><summary class="muted">Snapshot crudo</summary><pre id="raw"></pre></details>
+
+  <p class="muted">Backend: <input id="backend" value="http://localhost:3000" style="width:170px"></p>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
