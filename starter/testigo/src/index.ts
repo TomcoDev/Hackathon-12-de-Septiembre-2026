@@ -70,7 +70,7 @@ if (bot) {
       id: `m_${ctx.message.message_id}`,
       ts: new Date(ts).toISOString(),
       canal: "#" + slug(ctx.chat.title ?? "grupo"),
-      autor: slug(ctx.from.username ?? ctx.from.first_name),
+      autor: slug(ctx.from.first_name || ctx.from.username || "anon"),
       texto: ctx.message.text,
       thread_id: thread,
       link: `https://t.me/c/${String(ctx.chat.id).replace(/^-100/, "")}/${ctx.message.message_id}`,
