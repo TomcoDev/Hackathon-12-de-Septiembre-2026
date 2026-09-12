@@ -61,6 +61,11 @@ let anteriorVivo: { ts: number; thread: string } | null = null;
 if (bot) {
   bot.on("message:text", async (ctx) => {
     if (ctx.chat.type === "private") return; // en privado solo /start y /ping
+    // Admin anonimo: Telegram esconde quien escribio. No hay forma de atribuirlo.
+    if (ctx.message.sender_chat) {
+      console.log(`[grupo] mensaje de un admin ANONIMO, no se puede atribuir. Desactivar "Permanecer anonimo" en los permisos de admin del grupo.`);
+      return;
+    }
     // Misma regla de hilos que importar.ts: reply, o ventana de 20 min, o hilo nuevo.
     const ts = ctx.message.date * 1000;
     const thread = ctx.message.reply_to_message ? `t_${ctx.message.reply_to_message.message_id}`
@@ -70,11 +75,12 @@ if (bot) {
       id: `m_${ctx.message.message_id}`,
       ts: new Date(ts).toISOString(),
       canal: "#" + slug(ctx.chat.title ?? "grupo"),
-      autor: slug(ctx.from.first_name || ctx.from.username || "anon"),
+      autor: slug(ctx.from.first_name || ctx.from.username || "", "u" + ctx.from.id),
       texto: ctx.message.text,
       thread_id: thread,
       link: `https://t.me/c/${String(ctx.chat.id).replace(/^-100/, "")}/${ctx.message.message_id}`,
     };
+    console.log(`[grupo] ${m.autor}: ${m.texto.slice(0, 80)}`);
     // Mismo camino que el replay. Ni una linea distinta.
     const cerrados = ingerir(estado, m);
     for (const id of cerrados) await evaluarHilo(estado, id, DETECTOR);

@@ -76,7 +76,7 @@ export function convertir(exp: Export): { mensajes: Msg[]; autores: Map<string, 
     }
     hiloDe.set(m.id, thread);
 
-    const autor = slug(m.from ?? m.from_id ?? "anon");
+    const autor = slug(m.from ?? "", m.from_id ? "u" + m.from_id.replace(/\D/g, "") : "anon");
     autores.set(autor, (autores.get(autor) ?? 0) + 1);
 
     mensajes.push({
