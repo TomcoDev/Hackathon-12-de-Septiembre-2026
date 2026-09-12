@@ -22,6 +22,8 @@ export type OpcionesReplay = {
   onMensaje?: (m: Msg, estado: Estado) => void;
   /** Para abortar desde afuera (reset en la pantalla). */
   cancelado?: () => boolean;
+  /** Mientras devuelva true, el bucle espera sin consumir mensajes. */
+  pausado?: () => boolean;
 };
 
 export function leerJsonl(archivo: string): Msg[] {
@@ -35,6 +37,10 @@ const pausa = (ms: number) => (ms > 0 ? new Promise((r) => setTimeout(r, ms)) : 
 
 export async function correrReplay(estado: Estado, mensajes: Msg[], o: OpcionesReplay): Promise<Estado> {
   for (const m of mensajes) {
+    if (o.cancelado?.()) break;
+
+    // Pausa: para explicar la pantalla en camara sin que el mes siga corriendo.
+    while (o.pausado?.() && !o.cancelado?.()) await pausa(150);
     if (o.cancelado?.()) break;
 
     const cerrados = ingerir(estado, m);

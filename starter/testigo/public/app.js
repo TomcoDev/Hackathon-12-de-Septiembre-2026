@@ -92,6 +92,9 @@ function Narracion({ s }) {
     clase = "leyendo";
     titulo = "Anotó en silencio.";
     detalle = `${TIPO[ult.evidencia.tipo]} · «${tapar(ult.evidencia.que).slice(0, 80)}» · no dijo nada en el grupo.`;
+  } else if (s.replayEnCurso && s.pausado) {
+    titulo = "En pausa.";
+    detalle = `Leyó ${num(s.leidos)} de ${num(s.total)} mensajes. El mes está detenido.`;
   } else if (s.replayEnCurso) {
     clase = "leyendo";
     titulo = "Leyendo el grupo. No dice nada.";
@@ -323,7 +326,7 @@ function App() {
     const nueva = JSON.stringify([
       j.leidos, j.anotados, j.intervenciones, j.bitacora.length, j.plan.length,
       j.ultimos.at(-1) && j.ultimos.at(-1).id, j.disparador && j.disparador.id,
-      j.replayEnCurso, j.total,
+      j.replayEnCurso, j.pausado, j.total,
       j.entregable && j.entregable.bullets.length, j.entregable && j.entregable.compartido,
     ]);
     if (!forzar && nueva === firma.current) return;
@@ -353,6 +356,11 @@ function App() {
       tick(true);
     });
 
+  const pausar = () => post("/pausa").then(() => tick(true));
+  const reanudar = () => post("/reanudar").then(() => tick(true));
+  // Cancelar y limpiar son lo mismo: /reset corta el replay y deja el estado en cero.
+  const cancelar = reset;
+
   const borrar = (id) => fetch("/entregable/" + id, { method: "DELETE" }).then(() => tick(true));
   const compartir = () => post("/entregable/compartir").then(() => tick(true));
 
@@ -376,8 +384,17 @@ function App() {
           <option value="80">ritmo de demo</option>
           <option value="350">lento, para explicar</option>
         </select>
-        <button id="replay" className="primary" onClick=${replay}><${Icono} id="i-play" />Reproducir el mes</button>
-        <button id="reset" onClick=${reset}><${Icono} id="i-reset" />Reset</button>
+        ${s.replayEnCurso
+          ? html`<${React.Fragment}>
+              ${s.pausado
+                ? html`<button id="reanudar" className="primary" onClick=${reanudar}><${Icono} id="i-play" />Reanudar</button>`
+                : html`<button id="pausa" onClick=${pausar}><${Icono} id="i-pause" />Pausa</button>`}
+              <button id="cancelar" onClick=${cancelar}><${Icono} id="i-stop" />Cancelar</button>
+            <//>`
+          : html`<${React.Fragment}>
+              <button id="replay" className="primary" onClick=${replay}><${Icono} id="i-play" />Reproducir el mes</button>
+              <button id="reset" onClick=${reset}><${Icono} id="i-reset" />Limpiar</button>
+            <//>`}
       </div>
       <div className="contador">
         <div><b id="leidos">${num(s.leidos)}</b><span>mensajes leídos</span></div>

@@ -33,6 +33,7 @@ let estado: Estado = nuevoEstado(PERSONA);
 process.on("unhandledRejection", (e) => console.error("rechazo sin manejar (sigo vivo):", String((e as Error)?.message ?? e).slice(0, 200)));
 let replayEnCurso = false;
 let cancelarReplay = false;
+let pausaReplay = false;
 let totalReplay = 0;
 let archivoReplay = "";
 
@@ -153,6 +154,7 @@ app.get("/state", (_req, res) => {
     disparador: estado.disparador,
     entregable: estado.entregable,
     replayEnCurso,
+    pausado: pausaReplay,
     total: totalReplay,
     archivo: archivoReplay,
     dmPosible: Boolean(bot && destinoDe(PERSONA)),
@@ -169,18 +171,32 @@ app.post("/replay", async (req, res) => {
   estado = nuevoEstado(PERSONA);
   replayEnCurso = true;
   cancelarReplay = false;
+  pausaReplay = false;
   const mensajes = leerJsonl(archivo);
   totalReplay = mensajes.length;
   archivoReplay = archivo;
   res.json({ ok: true, mensajes: mensajes.length, ms });
 
-  correrReplay(estado, mensajes, { ms, detector: DETECTOR, redactar, enviar, cancelado: () => cancelarReplay })
+  correrReplay(estado, mensajes, { ms, detector: DETECTOR, redactar, enviar, cancelado: () => cancelarReplay, pausado: () => pausaReplay })
     .catch((e) => console.error("replay:", e))
     .finally(() => (replayEnCurso = false));
 });
 
+// Pausa y reanudar: son para la demo en vivo, poder frenar el mes y explicar
+// la pantalla sin que los mensajes sigan entrando.
+app.post("/pausa", (_req, res) => {
+  pausaReplay = replayEnCurso;
+  res.json({ ok: true, pausado: pausaReplay });
+});
+
+app.post("/reanudar", (_req, res) => {
+  pausaReplay = false;
+  res.json({ ok: true, pausado: false });
+});
+
 app.post("/reset", (_req, res) => {
   cancelarReplay = true;
+  pausaReplay = false;
   estado = nuevoEstado(PERSONA);
   totalReplay = 0;
   archivoReplay = "";
