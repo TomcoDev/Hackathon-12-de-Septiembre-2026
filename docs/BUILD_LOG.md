@@ -34,3 +34,5 @@ Completar en tiempo real. Una línea por hito. Esto es lo que el jurado puede pe
 | 13:45 | Punta a punta sobre export sintético: 39 leídos · 5 anotados · 1 habló. Dos corridas, mismo resultado. | Luis + Claude |
 | 14:05 | Pantalla del demo (`public/index.html`): contador de tres números, narración, embudo «por qué se calló», DM privado con evidencia citada, borrar y compartir. | Luis + Claude |
 | 14:25 | `seed.ts`: mes sintético en formato export de Telegram (262 msgs, 6 personas, 149 hilos). Detector anota a todos, el DM filtra por persona. 262 · 15 · 1, cero falsos positivos. | Luis + Claude |
+| 14:45 | Bot en vivo probado en el grupo real: nombres con emojis y admins anónimos manejados; cierre de hilos por tiempo; el DM va a quien dio `/start`. `npm run verificar` = prueba de terminado de P1. | Luis + Claude |
+| 15:10 | Deploy en un server Linux limpio con Node 22 desde `main`: `npm install` + `npm start` funcionan siguiendo el README. Cayó por 409 (dos instancias con el mismo token): el bot ahora sobrevive y reintenta solo. | Luis + Claude |
