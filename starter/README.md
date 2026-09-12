@@ -1,5 +1,8 @@
 # starter
 
+> **El demo es `testigo/`.** Es EL TESTIGO completo: importador, tubería, bot, replay, pantalla y seed. Ver `testigo/README.md`.
+> Los otros tres son el andamiaje previo al evento (`agent-backend`, `chrome-extension`, `telegram-agent`) y un chasis de voz construido y descartado durante el build (`voice-agent`). Se dejan por el historial: `docs/BUILD_LOG.md`.
+
 Tres piezas mínimas, independientes entre sí, que corren sin lógica de agente. Elegir la que corresponda a la idea y borrar el resto antes de entregar, o dejarlas y explicar en el README cuál se usó.
 
 | Carpeta | Qué es | Para qué idea |
