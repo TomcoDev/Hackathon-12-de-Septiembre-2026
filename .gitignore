@@ -36,3 +36,7 @@ starter/testigo/data/*
 !starter/testigo/data/.gitkeep
 !starter/testigo/data/ejemplo.jsonl
 !starter/testigo/data/seed.jsonl
+
+# Cualquier export que caiga fuera de starter/testigo tambien es privado.
+data/*.jsonl
+!data/ejemplo.jsonl

@@ -50,4 +50,4 @@ Link al post: `[COMPLETAR]`
 
 - [ ] Alguien que no escribió el código abrió el repo y logró correrlo siguiendo el README.
 - [ ] El video se ve y se escucha bien en el celular.
-- [ ] Los cuatro integrantes figuran en el equipo del portal.
+- [ ] Los tres integrantes figuran en el equipo del portal: Luis Calabro, José Ascurra, Néstor Martínez.
