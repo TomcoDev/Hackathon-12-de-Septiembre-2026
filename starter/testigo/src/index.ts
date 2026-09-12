@@ -84,6 +84,18 @@ if (bot) {
     }
   });
   bot.start({ onStart: (me) => console.log(`bot @${me.username} escuchando el grupo (long polling)`) });
+
+  // En vivo un hilo tambien se cierra por tiempo: QUIETUD_MIN minutos sin actividad.
+  // Sin esto, en un grupo real "anoto en silencio" recien aparece cuando llegan 6 mensajes mas.
+  const QUIETUD_MS = Number(process.env.QUIETUD_MIN ?? 1) * 60_000;
+  setInterval(async () => {
+    if (replayEnCurso) return;
+    const limite = Date.now() - QUIETUD_MS;
+    for (const id of pendientes(estado)) {
+      const ultimo = estado.hilos.get(id)?.at(-1);
+      if (ultimo && new Date(ultimo.ts).getTime() < limite) await evaluarHilo(estado, id, DETECTOR);
+    }
+  }, 10_000);
 }
 
 // ---------------------------------------------------------------- entrada 2: el replay

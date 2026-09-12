@@ -181,7 +181,7 @@ const EMBUDO = [
   ["el modelo falló", /^error del modelo/],
 ];
 
-$("replay").onclick = () => post("/replay", { archivo: params.get("archivo") || "data/ejemplo.jsonl", ms: Number($("vel").value) });
+$("replay").onclick = () => post("/replay", { ...(params.get("archivo") ? { archivo: params.get("archivo") } : {}), ms: Number($("vel").value) });
 $("reset").onclick = () => post("/reset").then(pintar);
 document.querySelectorAll(".filtros button").forEach((b) => (b.onclick = () => { filtro = b.dataset.f; document.querySelectorAll(".filtros button").forEach((x) => x.classList.toggle("on", x === b)); pintar(); }));
 window.borrar = (id) => fetch("/entregable/" + id, { method: "DELETE" }).then(pintar);
