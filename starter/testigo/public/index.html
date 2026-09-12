@@ -132,6 +132,55 @@
   section { scroll-behavior:smooth }
   @media (prefers-reduced-motion: reduce) { section { scroll-behavior:auto } }
 
+  /* ── Celular: la pagina scrollea entera y las columnas se apilan ── */
+  @media (max-width: 760px) {
+    /* Sin esto el body queda fijo y cada columna scrollea por su cuenta:
+       en un telefono son tres cajitas de 200px que no se pueden leer. */
+    html, body { height:auto; overflow:visible }
+    body { font-size:15px }
+
+    header { gap:12px; padding:12px 16px }
+    .brand h1 { font-size:14px; letter-spacing:2px }
+    .brand p { font-size:12px }
+    /* El selector ocupa su fila y los dos botones comparten la de abajo:
+       asi "Reproducir el mes" entra en una linea y no queda desparejo. */
+    .controles { width:100%; gap:8px; flex-wrap:wrap }
+    .controles select { flex:1 1 100%; padding:11px 10px; font-size:14px }
+    .controles button { flex:1 1 0; padding:11px 10px; font-size:14px; white-space:nowrap;
+                        display:inline-flex; align-items:center; justify-content:center }
+
+    /* Los tres numeros, en fila y completos: es el plano que prueba el silencio. */
+    .contador { width:100%; margin-left:0; gap:0; display:grid; grid-template-columns:repeat(3,1fr) }
+    .contador > div { min-width:0; text-align:center }
+    .contador b { font-size:27px; letter-spacing:-.5px }
+    .contador span { font-size:10px; letter-spacing:.6px; display:block; line-height:1.25 }
+
+    .estado { padding:10px 16px }
+    .estado b { font-size:15px }
+
+    main { display:block }
+    section { border-right:0; border-bottom:1px solid var(--line); padding:0 16px 18px }
+    .col-head { margin:0 -16px; padding:12px 16px 8px }
+    /* El grupo es un feed vivo: se acota para poder llegar al resto sin scrollear un mes. */
+    section.publico { max-height:62vh; overflow-y:auto }
+    section.agente, section.privado { overflow:visible }
+
+    .msg { padding:6px 8px 6px 10px }
+    .msg .quien { min-width:46px; font-size:12.5px }
+    .msg .hora { font-size:11px }
+
+    /* 150px de etiqueta no entran: el motivo pasa a ocupar la fila completa. */
+    .embudo .fila { grid-template-columns:1fr auto auto; gap:6px 8px }
+    .embudo .barra { grid-column:1 / -1; height:6px }
+
+    .b { grid-template-columns:20px 1fr; gap:4px 8px }
+    .b .acc { grid-column:2; justify-content:flex-start; margin-top:2px }
+    .b .ev { grid-column:1 / -1 }
+    .dm { border-radius:12px; padding:14px }
+    .dm .pie .cta { flex-direction:column; align-items:flex-start }
+  }
+
+
   /* Scrollbar propia: la nativa de Windows es gris claro y rompe el tema en camara. */
   section, .entregable .cuerpo, .dm { scrollbar-width:thin; scrollbar-color:#2c3442 transparent }
   section::-webkit-scrollbar, .dm::-webkit-scrollbar { width:11px; height:11px }
