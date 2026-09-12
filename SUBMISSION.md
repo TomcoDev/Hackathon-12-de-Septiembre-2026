@@ -30,7 +30,7 @@ https://github.com/TomcoDev/Hackathon-12-de-Septiembre-2026
 
 ## 4. Video de demostración de dos minutos
 
-Link: `[COMPLETAR]`
+Link: https://www.youtube.com/watch?v=fBRx-2QU_4U
 
 - [ ] Dura dos minutos o menos.
 - [ ] Muestra el agente actuando solo, por un evento, sin que nadie le tipee.

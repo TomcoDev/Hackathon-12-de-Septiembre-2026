@@ -5,7 +5,7 @@
 **Equipo:** Tereré Driven Development (TDD, pero el otro)
 **Hackathon:** Agents, Everywhere · AI Tinkerers × OpenAI · 12 de septiembre de 2026 · sede San Lorenzo, Paraguay
 
-[![Ver demo](https://img.shields.io/badge/demo-video%202%20min-red)](LINK_AL_VIDEO)
+[![Ver demo](https://img.shields.io/badge/demo-video%202%20min-red)](https://www.youtube.com/watch?v=fBRx-2QU_4U)
 
 ---
 
@@ -53,7 +53,7 @@ iba dirigida a él.
 
 ## Demo
 
-**En vivo: [https://eltestigo.lat](https://eltestigo.lat)** · Video de dos minutos: **LINK_AL_VIDEO**
+**En vivo: [https://eltestigo.lat](https://eltestigo.lat)** · Video de dos minutos: **[ver en YouTube](https://www.youtube.com/watch?v=fBRx-2QU_4U)**
 
 Lo que se ve: el grupo corriendo un mes acelerado mientras el contador sube y el
 agente no dice nada. Alguien menciona su 1:1. Llega un privado con ocho puntos
@@ -121,7 +121,7 @@ grupo de Telegram
 |---|---|---|
 | Modelo | OpenAI, Responses API con structured outputs estrictos | Decidir si un hilo contiene trabajo, de quién es, y redactar los puntos |
 | Entorno | Telegram, grammY | El grupo donde pasa todo, y el privado donde el agente habla una vez |
-| Datos | Export real del grupo del equipo | La evidencia es conversación de verdad, no un dataset inventado |
+| Datos | `data/seed.jsonl`, sintético, y opcionalmente el export real de un grupo | El repo trae un mes sintético para que cualquiera lo corra sin datos privados. El importador acepta el export real de Telegram, que queda fuera de git |
 
 El schema estricto no es decorativo: la salida del modelo está garantizada por
 construcción, y encima corre una regla dura en código que descarta todo punto que

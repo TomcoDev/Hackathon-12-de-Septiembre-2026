@@ -47,7 +47,7 @@ No chat window. Nobody asked it anything.
 
 Built in 4 hours in San Lorenzo, Paraguay 🇵🇾
 
-Demo: [LINK VIDEO]
+Demo: https://www.youtube.com/watch?v=fBRx-2QU_4U
 Code: https://github.com/TomcoDev/Hackathon-12-de-Septiembre-2026
 
 #AgentsEverywhere #AITinkerers
@@ -87,7 +87,7 @@ Your one-on-one is tomorrow and you can't remember what you did.
 EL TESTIGO sat in your team's group chat all month and said nothing. Now it can
 tell you — with the link to every message.
 
-@aitinkerers x @OpenAI · Agents, Everywhere · [LINK VIDEO]
+@aitinkerers x @OpenAI · Agents, Everywhere · https://www.youtube.com/watch?v=fBRx-2QU_4U
 ```
 
 ## Checklist
