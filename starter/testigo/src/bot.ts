@@ -25,6 +25,25 @@ export function chatIdDe(persona: string): number | null {
   return leerChats()[persona] ?? null;
 }
 
+/**
+ * Si una sola persona le dio /start, es ella. Sirve para el demo: la persona del
+ * dataset ("lu") no es un usuario real de Telegram, y el DM tiene que llegar igual.
+ */
+export function unicoChat(): { persona: string; chatId: number } | null {
+  const chats = leerChats();
+  const ids = [...new Set(Object.values(chats))];
+  if (ids.length !== 1) return null;
+  return { persona: Object.keys(chats).find((k) => chats[k] === ids[0])!, chatId: ids[0] };
+}
+
+/** A quien le llega el DM de esta persona, o null si no hay forma de escribirle. */
+export function destinoDe(persona: string): { chatId: number; nota: string } | null {
+  const directo = chatIdDe(persona);
+  if (directo) return { chatId: directo, nota: "" };
+  const u = unicoChat();
+  return u ? { chatId: u.chatId, nota: ` (a ${u.persona}, la única persona que dio /start)` } : null;
+}
+
 function guardarChat(persona: string, chatId: number): void {
   const chats = leerChats();
   chats[persona] = chatId;

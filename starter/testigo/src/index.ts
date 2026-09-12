@@ -18,7 +18,7 @@ import { evaluarHilo, ingerir, nuevoEstado, pendientes, UMBRAL, type Estado } fr
 import { esDisparador, hablar, type Enviar } from "./trigger.js";
 import { DETECTOR } from "./detectores/index.js";
 import { redactar } from "./redactor.js";
-import { chatIdDe, crearBot, enviarDM, formatearDM } from "./bot.js";
+import { crearBot, destinoDe, enviarDM, formatearDM } from "./bot.js";
 import { correrReplay, leerJsonl } from "./replay.js";
 import { slug } from "./importar.js";
 
@@ -39,11 +39,11 @@ const bot = token ? crearBot(token) : null;
 
 /** Manda el DM si puede. Si no puede, lo dice en la bitacora en vez de fallar en silencio. */
 const enviar: Enviar = async (e, s) => {
-  const chatId = chatIdDe(s.persona);
-  if (bot && chatId) {
+  const destino = destinoDe(s.persona);
+  if (bot && destino) {
     try {
-      await enviarDM(bot, chatId, e);
-      console.log(`DM enviado a ${s.persona} (chat ${chatId})`);
+      await enviarDM(bot, destino.chatId, e);
+      console.log(`DM enviado a ${s.persona}${destino.nota} (chat ${destino.chatId})`);
       return;
     } catch (err: unknown) {
       s.bitacora.push({ ts: new Date().toISOString(), hilo: "-", tipo: "descartado", motivo: `no pude mandar el DM: ${(err as Error).message}`.slice(0, 140) });
@@ -75,7 +75,8 @@ if (bot) {
       id: `m_${ctx.message.message_id}`,
       ts: new Date(ts).toISOString(),
       canal: "#" + slug(ctx.chat.title ?? "grupo"),
-      autor: slug(ctx.from.first_name || ctx.from.username || "", "u" + ctx.from.id),
+      // Nombre -> apellido -> @username -> id. Un nombre de puros emojis cae al siguiente, no al id.
+      autor: slug(ctx.from.first_name ?? "", slug(ctx.from.last_name ?? "", slug(ctx.from.username ?? "", "u" + ctx.from.id))),
       texto: ctx.message.text,
       thread_id: thread,
       link: `https://t.me/c/${String(ctx.chat.id).replace(/^-100/, "")}/${ctx.message.message_id}`,
@@ -110,7 +111,7 @@ app.use(express.json());
 app.use(express.static(resolve(aqui, "../public")));
 
 app.get("/health", (_req, res) => {
-  res.json({ ok: true, persona: PERSONA, umbral: UMBRAL, archivo: ARCHIVO_DEFAULT, bot: Boolean(bot), dmPosible: Boolean(bot && chatIdDe(PERSONA)), key: Boolean(process.env.OPENAI_API_KEY) });
+  res.json({ ok: true, persona: PERSONA, umbral: UMBRAL, archivo: ARCHIVO_DEFAULT, bot: Boolean(bot), dmPosible: Boolean(bot && destinoDe(PERSONA)), key: Boolean(process.env.OPENAI_API_KEY) });
 });
 
 /** Todo lo que la pantalla necesita. Se pollea cada 300ms durante el replay. */
@@ -131,7 +132,7 @@ app.get("/state", (_req, res) => {
     replayEnCurso,
     total: totalReplay,
     archivo: archivoReplay,
-    dmPosible: Boolean(bot && chatIdDe(PERSONA)),
+    dmPosible: Boolean(bot && destinoDe(PERSONA)),
   });
 });
 
@@ -184,5 +185,5 @@ app.post("/entregable/compartir", (_req, res) => {
 app.listen(PORT, () => {
   console.log(`EL TESTIGO en http://localhost:${PORT}  persona=${PERSONA}  umbral=${UMBRAL}`);
   if (!bot) console.log("  sin TELEGRAM_BOT_TOKEN: el DM se imprime en consola y queda en /state");
-  else if (!chatIdDe(PERSONA)) console.log(`  AVISO: "${PERSONA}" todavía no le dio /start al bot. Sin eso no puedo escribirle.`);
+  else if (!destinoDe(PERSONA)) console.log(`  AVISO: nadie le dio /start al bot todavía. Sin eso no puedo escribirle a nadie.`);
 });

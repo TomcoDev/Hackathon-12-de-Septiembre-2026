@@ -31,14 +31,17 @@ type MsgExport = {
 };
 type Export = { name?: string; type?: string; id?: number; messages: MsgExport[] };
 
-export function slug(s: string): string {
-  return s
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .trim()
-    .split(/\s+/)[0]
-    .replace(/[^a-z0-9_]/g, "") || "anon";
+/**
+ * "N\u00e9stor Mart\u00ednez" -> "nestor". "\ud83e\uddc9 Luis" -> "luis". "\u042e\u043b\u0438\u044f \u041a" -> "\u044e\u043b\u0438\u044f".
+ * Prueba palabra por palabra hasta encontrar una con letras; si no hay, usa el fallback (el id).
+ */
+export function slug(s: string, fallback = "anon"): string {
+  const palabras = s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim().split(/\s+/);
+  for (const p of palabras) {
+    const limpio = p.replace(/[^\p{L}\p{N}_]/gu, "");
+    if (limpio) return limpio;
+  }
+  return fallback;
 }
 
 function aplanar(t: MsgExport["text"]): string {
