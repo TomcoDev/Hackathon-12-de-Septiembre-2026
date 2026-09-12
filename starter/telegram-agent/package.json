@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "replay": "tsx src/replay.ts",
+    "trigger:dev": "npx trigger.dev@latest dev",
+    "trigger:init": "npx trigger.dev@latest init"
   },
   "dependencies": {
+    "@trigger.dev/sdk": "^4.5.16",
     "dotenv": "^16.4.5",
     "grammy": "^1.30.0"
   },

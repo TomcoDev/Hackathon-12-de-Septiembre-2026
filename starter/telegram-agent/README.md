@@ -1,39 +1,94 @@
 # telegram-agent
 
-Bot de Telegram mínimo con grammY. Escucha todos los mensajes de texto de un grupo y los loguea. Responde `/ping` y `/llm` para verificar que Telegram y OpenRouter están conectados.
+Agente ambiental que vive en un grupo de Telegram. No responde a nadie: escucha
+todos los mensajes, mantiene estado por chat y solo interviene cuando detecta un
+patrón. El silencio es una feature.
 
-Es la base para un **agente ambiental**: uno que no espera que le hablen, sino que mira el flujo del grupo y solo interviene cuando detecta un patrón.
+## Arquitectura
 
-## Setup (5 minutos)
-
-1. En Telegram, hablar con `@BotFather`:
-   - `/newbot`, elegir nombre y username. Copiar el token.
-   - `/setprivacy`, elegir el bot, `Disable`. Sin esto el bot no ve los mensajes del grupo, solo los que lo mencionan.
-2. Crear un grupo de prueba y agregar el bot. Si ya estaba agregado antes de cambiar privacy, sacarlo y volverlo a agregar.
-3. Pegar el token en `.env` como `TELEGRAM_BOT_TOKEN`.
-
-```bash
-cd starter/telegram-agent
-npm install
-npm run dev
+```
+mensaje del grupo
+      ↓
+  state.ts          ventana de 40 mensajes por chat, en memoria
+      ↓
+  detector.ts       guardas + filtro barato (sin modelo) + umbral
+      ↓
+  detectors/patron.ts   el patrón: filtro barato y prompt
+      ↓
+  llm.ts            Responses API de OpenAI, schema estricto
+      ↓
+  interviene en el grupo con evidencia citada
+      ↓
+  trigger/seguimiento.ts   espera N minutos y vuelve SOLO al grupo
 ```
 
-4. En el grupo, escribir `/ping`. Tiene que responder `pong 🧉`.
-5. Escribir `/llm`. Tiene que responder con lo que diga el modelo.
-6. Escribir cualquier cosa. Tiene que aparecer en la consola.
+| Archivo | Qué hace |
+|---|---|
+| `src/llm.ts` | Responses API con structured outputs estrictos. Cae a OpenRouter solo si falta la key de OpenAI. |
+| `src/state.ts` | Estado por chat: ventana de mensajes, participantes, mute, seguimientos abiertos. |
+| `src/detector.ts` | Contrato `Detector`, schema de detección, umbral y validación semántica. Un solo camino de decisión. |
+| `src/detectors/patron.ts` | **El detector.** Cambiar la constante `PATRON` para elegir entre los tres. |
+| `src/telegram.ts` | Bot API por fetch, para postear desde las tareas de Trigger.dev que no tienen `ctx`. |
+| `src/trigger/seguimiento.ts` | Espera diferida. Es lo que hace que el agente actúe sin que nadie esté mirando. |
+| `src/trigger/deteccion.ts` | El detector como tarea durable, con reintentos y trazas. |
+| `src/replay.ts` | Reproduce conversaciones guionadas por el mismo pipeline. Test y calibración. |
 
-## Qué hay que construir durante el hackathon
+## Poner en marcha
 
-Todo lo marcado con `TODO` en `src/index.ts`. Hoy el bot solo escucha y loguea. El estado, el detector y la intervención no existen. Eso es a propósito por las reglas de elegibilidad.
+1. Completar en el `.env` de la raíz del repo: `TELEGRAM_BOT_TOKEN`, `OPENAI_API_KEY`, `TRIGGER_SECRET_KEY`.
 
-## Ideas de detector (ver docs/20-ideas-con-el-Juez.pdf)
+2. Copiar ese `.env` acá, porque el CLI de Trigger.dev lee el de esta carpeta:
 
-- Deriva de definiciones: dos personas usan la misma palabra con significados distintos.
-- Decisión no anotada: el grupo llegó a un acuerdo y nadie lo registró. Con contradicción de una decisión anterior, mejor.
-- Tarea sin dueño: se mencionó algo necesario y nadie lo agarró.
+   ```bash
+   cp ../../.env .env
+   ```
 
-Los tres usan la misma arquitectura. Construirla una vez y enchufar el detector que mejor funcione a las 14:30.
+   Los dos están en `.gitignore`. Si cambiás la raíz, volvé a copiar.
 
-## Long polling vs webhook
+3. En [@BotFather](https://t.me/BotFather): `/setprivacy` → **Disable**, y después sacar
+   el bot del grupo y volverlo a agregar. Sin esto el bot solo ve los mensajes
+   donde lo mencionan, y el agente ambiental deja de ser ambiental.
 
-Este starter usa long polling (`bot.start()`), que funciona desde cualquier laptop sin URL pública. Para el hackathon es suficiente. Si hace falta webhook (por ejemplo para Trigger.dev), grammY lo soporta con `webhookCallback`.
+4. Arrancar los dos procesos, en terminales separadas:
+
+   ```bash
+   npm run dev           # el bot
+   npm run trigger:dev   # el worker de Trigger.dev
+   ```
+
+   La primera vez, `npm run trigger:init` para crear el proyecto y llenar
+   `TRIGGER_PROJECT_REF`.
+
+## Verificar
+
+```bash
+npm run typecheck
+npm run replay -- ../../docs/test-conversations/caso1.json
+```
+
+En el grupo: `/ping` responde, `/llm` prueba el modelo, `/status` muestra el estado.
+
+## Calibrar
+
+Todo se ajusta por `.env` sin tocar código:
+
+| Variable | Para qué |
+|---|---|
+| `PATRON` | Cuál de los tres patrones detecta |
+| `UMBRAL` | Confianza mínima para intervenir. Arranca en 0.8 |
+| `MIN_CHEQUEO` | Mensajes nuevos antes de gastar una llamada al modelo |
+| `MIN_INTERVENCION` | Mensajes de silencio obligatorio después de hablar |
+| `SEGUIMIENTO_MINUTOS` | Cuánto espera antes de volver. **Bajar a 1 para grabar el video** |
+
+El replay imprime el motivo de cada silencio. Ahí se ve si el que sobra es el
+filtro barato o el umbral.
+
+## Control del usuario
+
+| Comando | Qué hace |
+|---|---|
+| `/mute` | Deja de intervenir en este chat |
+| `/unmute` | Vuelve |
+| `/status` | Estado resumido y seguimientos abiertos |
+| `/why` | Repite la última intervención con toda la evidencia |
+| `/listo` | Cierra el seguimiento y **cancela** la tarea diferida antes de que despierte |

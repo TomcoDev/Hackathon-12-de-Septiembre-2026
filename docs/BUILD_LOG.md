@@ -20,9 +20,9 @@ Completar en tiempo real. Una línea por hito. Esto es lo que el jurado puede pe
 | Hora | Qué | Quién |
 |---|---|---|
 | 11:15 | Inicio del build. | Todos |
-| | | |
-| | | |
-| | | |
+| 11:20 | El repo pasa a control de versiones. Hasta acá no había historial: el primer commit aísla el scaffolding del 11 de septiembre, el segundo el tooling de hoy. | Néstor |
+| 11:26 | Base del agente en `starter/telegram-agent`. `llm.ts` migrado de OpenRouter chat/completions a la Responses API de OpenAI con structured outputs estrictos. Estado por chat en memoria, contrato del detector, umbral con validación semántica compartida, comandos de control (`/mute`, `/unmute`, `/status`, `/why`, `/listo`) y arnés de replay para calibrar. | Néstor |
+| 11:26 | Trigger.dev integrado en dos roles: tarea de espera diferida que hace que el agente vuelva solo al grupo sin que nadie le escriba, y tarea de detección durable con reintentos. | Néstor |
 | | | |
 | | | |
 | | | |
