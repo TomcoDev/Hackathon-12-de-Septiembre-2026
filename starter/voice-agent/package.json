@@ -1,0 +1,22 @@
+{
+  "name": "voice-agent",
+  "private": true,
+  "type": "module",
+  "description": "Chasis de agente ambiental de voz. Escucha una conversacion que no le esta dirigida, decide si vale la pena hablar, y puede ejecutar acciones con aprobacion.",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "replay": "tsx src/replay.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "testigo",
+  "private": true,
+  "type": "module",
+  "description": "EL TESTIGO: agente que vive en un canal, no habla, y se acuerda de lo que hiciste.",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "replay": "tsx src/replay.ts",
+    "typecheck": "tsc --noEmit",
+    "importar": "tsx src/importar.ts",
+    "seed": "tsx src/seed.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "grammy": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}

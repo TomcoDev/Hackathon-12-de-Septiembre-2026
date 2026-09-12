@@ -1,0 +1,39 @@
+{"id":"m_101","ts":"2026-08-03T12:02:10.000Z","canal":"#equipo","autor":"marta","texto":"buen lunes. este mes vamos por tres cosas: onboarding nuevo, migrar pagos a v2, y bajar la deuda de soporte. lo demás espera","thread_id":"t_101","link":"https://t.me/c/2233445566/101"}
+{"id":"m_102","ts":"2026-08-03T12:05:44.000Z","canal":"#equipo","autor":"lu","texto":"dale","thread_id":"t_101","link":"https://t.me/c/2233445566/102"}
+{"id":"m_103","ts":"2026-08-03T12:06:01.000Z","canal":"#equipo","autor":"jose","texto":"ok","thread_id":"t_101","link":"https://t.me/c/2233445566/103"}
+{"id":"m_104","ts":"2026-08-03T12:07:30.000Z","canal":"#equipo","autor":"nestor","texto":"va","thread_id":"t_101","link":"https://t.me/c/2233445566/104"}
+{"id":"m_105","ts":"2026-08-03T14:40:12.000Z","canal":"#equipo","autor":"nestor","texto":"alguien vio el ticket de soporte del login? hay 6 clientes que no pueden entrar desde ayer","thread_id":"t_105","link":"https://t.me/c/2233445566/105"}
+{"id":"m_106","ts":"2026-08-03T14:41:05.000Z","canal":"#equipo","autor":"lu","texto":"lo miro ahora, dejo lo de onboarding","thread_id":"t_105","link":"https://t.me/c/2233445566/106"}
+{"id":"m_107","ts":"2026-08-03T17:22:11.000Z","canal":"#equipo","autor":"lu","texto":"listo, ya subí el fix del timeout del login. era el pool de conexiones que se quedaba sin slots","thread_id":"t_107","link":"https://t.me/c/2233445566/107"}
+{"id":"m_108","ts":"2026-08-03T17:25:40.000Z","canal":"#equipo","autor":"nestor","texto":"gracias lu, con eso soporte vuelve a andar. les aviso a los 6","thread_id":"t_107","link":"https://t.me/c/2233445566/108","reply_to":"m_107"}
+{"id":"m_109","ts":"2026-08-03T17:26:02.000Z","canal":"#equipo","autor":"jose","texto":"👏","thread_id":"t_107","link":"https://t.me/c/2233445566/109"}
+{"id":"m_110","ts":"2026-08-04T15:30:00.000Z","canal":"#equipo","autor":"jose","texto":"almuerzo? el de siempre","thread_id":"t_110","link":"https://t.me/c/2233445566/110"}
+{"id":"m_111","ts":"2026-08-04T15:31:10.000Z","canal":"#equipo","autor":"nestor","texto":"dale, 13","thread_id":"t_110","link":"https://t.me/c/2233445566/111"}
+{"id":"m_112","ts":"2026-08-04T15:31:40.000Z","canal":"#equipo","autor":"lu","texto":"yo paso, tengo call","thread_id":"t_110","link":"https://t.me/c/2233445566/112"}
+{"id":"m_113","ts":"2026-08-10T13:15:00.000Z","canal":"#equipo","autor":"jose","texto":"no me anda el build de la extensión desde que actualicé node, tira un error de esbuild que no entiendo","thread_id":"t_113","link":"https://t.me/c/2233445566/113"}
+{"id":"m_114","ts":"2026-08-10T13:22:31.000Z","canal":"#equipo","autor":"lu","texto":"probá borrando node_modules y el lockfile, a mí me pasó lo mismo la semana pasada con la 22","thread_id":"t_113","link":"https://t.me/c/2233445566/114"}
+{"id":"m_115","ts":"2026-08-10T13:41:07.000Z","canal":"#equipo","autor":"jose","texto":"salió, gracias lu. dos horas perdidas por eso","thread_id":"t_113","link":"https://t.me/c/2233445566/115"}
+{"id":"m_116","ts":"2026-08-10T13:42:00.000Z","canal":"#equipo","autor":"lu","texto":"tranqui","thread_id":"t_113","link":"https://t.me/c/2233445566/116"}
+{"id":"m_117","ts":"2026-08-11T19:03:00.000Z","canal":"#equipo","autor":"marta","texto":"cómo vamos con pagos v2? el viernes tengo reunión con finanzas","thread_id":"t_117","link":"https://t.me/c/2233445566/117"}
+{"id":"m_118","ts":"2026-08-11T19:10:22.000Z","canal":"#equipo","autor":"lu","texto":"armé el comparativo postgres vs dynamo para pagos v2, está en el drive. yo iría por postgres por los reportes","thread_id":"t_117","link":"https://t.me/c/2233445566/118"}
+{"id":"m_119","ts":"2026-08-11T19:15:48.000Z","canal":"#equipo","autor":"marta","texto":"decidimos ir con postgres entonces. lu, mandame el doc","thread_id":"t_117","link":"https://t.me/c/2233445566/119"}
+{"id":"m_120","ts":"2026-08-11T19:16:30.000Z","canal":"#equipo","autor":"lu","texto":"va","thread_id":"t_117","link":"https://t.me/c/2233445566/120"}
+{"id":"m_121","ts":"2026-08-18T12:30:00.000Z","canal":"#equipo","autor":"nestor","texto":"los de Tigo están enojados por el retraso del reporte mensual, escribieron 3 veces","thread_id":"t_121","link":"https://t.me/c/2233445566/121"}
+{"id":"m_122","ts":"2026-08-18T12:31:15.000Z","canal":"#equipo","autor":"marta","texto":"alguien que los llame","thread_id":"t_121","link":"https://t.me/c/2233445566/122"}
+{"id":"m_123","ts":"2026-08-18T14:05:44.000Z","canal":"#equipo","autor":"lu","texto":"hablé con los de Tigo, les expliqué que el retraso es por la migración y quedaron tranquilos hasta el jueves. les prometí el reporte parcial mañana","thread_id":"t_123","link":"https://t.me/c/2233445566/123"}
+{"id":"m_124","ts":"2026-08-18T14:07:02.000Z","canal":"#equipo","autor":"marta","texto":"gracias","thread_id":"t_123","link":"https://t.me/c/2233445566/124"}
+{"id":"m_125","ts":"2026-08-18T14:07:30.000Z","canal":"#equipo","autor":"nestor","texto":"uf, gracias lu","thread_id":"t_123","link":"https://t.me/c/2233445566/125"}
+{"id":"m_126","ts":"2026-08-19T18:00:00.000Z","canal":"#equipo","autor":"jose","texto":"meme del día 😂","thread_id":"t_126","link":"https://t.me/c/2233445566/126"}
+{"id":"m_127","ts":"2026-08-19T18:01:00.000Z","canal":"#equipo","autor":"nestor","texto":"jajaja","thread_id":"t_126","link":"https://t.me/c/2233445566/127"}
+{"id":"m_128","ts":"2026-08-20T13:00:00.000Z","canal":"#equipo","autor":"nestor","texto":"subí el nuevo diseño del onboarding a figma, miren cuando puedan","thread_id":"t_128","link":"https://t.me/c/2233445566/128"}
+{"id":"m_129","ts":"2026-08-20T13:30:00.000Z","canal":"#equipo","autor":"lu","texto":"lo vi, está bien. yo cambiaría el paso 3","thread_id":"t_129","link":"https://t.me/c/2233445566/129"}
+{"id":"m_130","ts":"2026-08-25T20:45:00.000Z","canal":"#equipo","autor":"marta","texto":"se cayó el cron de facturación, hay 40 facturas sin emitir y mañana es el vencimiento","thread_id":"t_130","link":"https://t.me/c/2233445566/130"}
+{"id":"m_131","ts":"2026-08-25T21:02:19.000Z","canal":"#equipo","autor":"lu","texto":"lo tomo yo","thread_id":"t_130","link":"https://t.me/c/2233445566/131"}
+{"id":"m_132","ts":"2026-08-26T00:38:44.000Z","canal":"#equipo","autor":"lu","texto":"arreglé el cron de facturación, era la zona horaria después del cambio de servidor. corrí las 40 a mano, ya están emitidas","thread_id":"t_132","link":"https://t.me/c/2233445566/132"}
+{"id":"m_133","ts":"2026-08-26T00:45:00.000Z","canal":"#equipo","autor":"marta","texto":"gracias lu, mañana hablamos","thread_id":"t_132","link":"https://t.me/c/2233445566/133"}
+{"id":"m_134","ts":"2026-08-26T12:00:00.000Z","canal":"#equipo","autor":"jose","texto":"buen día","thread_id":"t_134","link":"https://t.me/c/2233445566/134"}
+{"id":"m_135","ts":"2026-08-26T12:01:00.000Z","canal":"#equipo","autor":"nestor","texto":"buenas","thread_id":"t_134","link":"https://t.me/c/2233445566/135"}
+{"id":"m_136","ts":"2026-08-27T17:00:00.000Z","canal":"#equipo","autor":"marta","texto":"el onboarding nuevo queda para septiembre, no llegamos","thread_id":"t_136","link":"https://t.me/c/2233445566/136"}
+{"id":"m_137","ts":"2026-08-27T17:02:00.000Z","canal":"#equipo","autor":"lu","texto":"ok","thread_id":"t_136","link":"https://t.me/c/2233445566/137"}
+{"id":"m_138","ts":"2026-08-28T19:30:00.000Z","canal":"#equipo","autor":"lu","texto":"mañana tengo el 1:1 con Marta, si alguien necesita algo de mí que sea hoy","thread_id":"t_138","link":"https://t.me/c/2233445566/138"}
+{"id":"m_139","ts":"2026-08-28T19:31:00.000Z","canal":"#equipo","autor":"nestor","texto":"todo bien acá","thread_id":"t_138","link":"https://t.me/c/2233445566/139"}

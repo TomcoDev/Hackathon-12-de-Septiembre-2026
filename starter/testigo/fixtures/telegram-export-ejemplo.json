@@ -1,0 +1,398 @@
+{
+ "name": "Equipo Producto",
+ "type": "private_supergroup",
+ "id": 2233445566,
+ "messages": [
+  {
+   "id": 101,
+   "type": "message",
+   "date": "2026-08-03T09:02:10",
+   "date_unixtime": "1785758530",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "buen lunes. este mes vamos por tres cosas: onboarding nuevo, migrar pagos a v2, y bajar la deuda de soporte. lo demás espera",
+   "text_entities": []
+  },
+  {
+   "id": 102,
+   "type": "message",
+   "date": "2026-08-03T09:05:44",
+   "date_unixtime": "1785758744",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "dale",
+   "text_entities": []
+  },
+  {
+   "id": 103,
+   "type": "message",
+   "date": "2026-08-03T09:06:01",
+   "date_unixtime": "1785758761",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "ok",
+   "text_entities": []
+  },
+  {
+   "id": 104,
+   "type": "message",
+   "date": "2026-08-03T09:07:30",
+   "date_unixtime": "1785758850",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "va",
+   "text_entities": []
+  },
+  {
+   "id": 105,
+   "type": "message",
+   "date": "2026-08-03T11:40:12",
+   "date_unixtime": "1785768012",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "alguien vio el ticket de soporte del login? hay 6 clientes que no pueden entrar desde ayer",
+   "text_entities": []
+  },
+  {
+   "id": 106,
+   "type": "message",
+   "date": "2026-08-03T11:41:05",
+   "date_unixtime": "1785768065",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "lo miro ahora, dejo lo de onboarding",
+   "text_entities": []
+  },
+  {
+   "id": 107,
+   "type": "message",
+   "date": "2026-08-03T14:22:11",
+   "date_unixtime": "1785777731",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "listo, ya subí el fix del timeout del login. era el pool de conexiones que se quedaba sin slots",
+   "text_entities": []
+  },
+  {
+   "id": 108,
+   "type": "message",
+   "date": "2026-08-03T14:25:40",
+   "date_unixtime": "1785777940",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "gracias lu, con eso soporte vuelve a andar. les aviso a los 6",
+   "text_entities": [],
+   "reply_to_message_id": 107
+  },
+  {
+   "id": 109,
+   "type": "message",
+   "date": "2026-08-03T14:26:02",
+   "date_unixtime": "1785777962",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "👏",
+   "text_entities": []
+  },
+  {
+   "id": 110,
+   "type": "message",
+   "date": "2026-08-04T12:30:00",
+   "date_unixtime": "1785857400",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "almuerzo? el de siempre",
+   "text_entities": []
+  },
+  {
+   "id": 111,
+   "type": "message",
+   "date": "2026-08-04T12:31:10",
+   "date_unixtime": "1785857470",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "dale, 13",
+   "text_entities": []
+  },
+  {
+   "id": 112,
+   "type": "message",
+   "date": "2026-08-04T12:31:40",
+   "date_unixtime": "1785857500",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "yo paso, tengo call",
+   "text_entities": []
+  },
+  {
+   "id": 113,
+   "type": "message",
+   "date": "2026-08-10T10:15:00",
+   "date_unixtime": "1786367700",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "no me anda el build de la extensión desde que actualicé node, tira un error de esbuild que no entiendo",
+   "text_entities": []
+  },
+  {
+   "id": 114,
+   "type": "message",
+   "date": "2026-08-10T10:22:31",
+   "date_unixtime": "1786368151",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "probá borrando node_modules y el lockfile, a mí me pasó lo mismo la semana pasada con la 22",
+   "text_entities": []
+  },
+  {
+   "id": 115,
+   "type": "message",
+   "date": "2026-08-10T10:41:07",
+   "date_unixtime": "1786369267",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "salió, gracias lu. dos horas perdidas por eso",
+   "text_entities": []
+  },
+  {
+   "id": 116,
+   "type": "message",
+   "date": "2026-08-10T10:42:00",
+   "date_unixtime": "1786369320",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "tranqui",
+   "text_entities": []
+  },
+  {
+   "id": 117,
+   "type": "message",
+   "date": "2026-08-11T16:03:00",
+   "date_unixtime": "1786474980",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "cómo vamos con pagos v2? el viernes tengo reunión con finanzas",
+   "text_entities": []
+  },
+  {
+   "id": 118,
+   "type": "message",
+   "date": "2026-08-11T16:10:22",
+   "date_unixtime": "1786475422",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "armé el comparativo postgres vs dynamo para pagos v2, está en el drive. yo iría por postgres por los reportes",
+   "text_entities": []
+  },
+  {
+   "id": 119,
+   "type": "message",
+   "date": "2026-08-11T16:15:48",
+   "date_unixtime": "1786475748",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "decidimos ir con postgres entonces. lu, mandame el doc",
+   "text_entities": []
+  },
+  {
+   "id": 120,
+   "type": "message",
+   "date": "2026-08-11T16:16:30",
+   "date_unixtime": "1786475790",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "va",
+   "text_entities": []
+  },
+  {
+   "id": 121,
+   "type": "message",
+   "date": "2026-08-18T09:30:00",
+   "date_unixtime": "1787056200",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "los de Tigo están enojados por el retraso del reporte mensual, escribieron 3 veces",
+   "text_entities": []
+  },
+  {
+   "id": 122,
+   "type": "message",
+   "date": "2026-08-18T09:31:15",
+   "date_unixtime": "1787056275",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "alguien que los llame",
+   "text_entities": []
+  },
+  {
+   "id": 123,
+   "type": "message",
+   "date": "2026-08-18T11:05:44",
+   "date_unixtime": "1787061944",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "hablé con los de Tigo, les expliqué que el retraso es por la migración y quedaron tranquilos hasta el jueves. les prometí el reporte parcial mañana",
+   "text_entities": []
+  },
+  {
+   "id": 124,
+   "type": "message",
+   "date": "2026-08-18T11:07:02",
+   "date_unixtime": "1787062022",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "gracias",
+   "text_entities": []
+  },
+  {
+   "id": 125,
+   "type": "message",
+   "date": "2026-08-18T11:07:30",
+   "date_unixtime": "1787062050",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "uf, gracias lu",
+   "text_entities": []
+  },
+  {
+   "id": 126,
+   "type": "message",
+   "date": "2026-08-19T15:00:00",
+   "date_unixtime": "1787162400",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "meme del día 😂",
+   "text_entities": []
+  },
+  {
+   "id": 127,
+   "type": "message",
+   "date": "2026-08-19T15:01:00",
+   "date_unixtime": "1787162460",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "jajaja",
+   "text_entities": []
+  },
+  {
+   "id": 128,
+   "type": "message",
+   "date": "2026-08-20T10:00:00",
+   "date_unixtime": "1787230800",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "subí el nuevo diseño del onboarding a figma, miren cuando puedan",
+   "text_entities": []
+  },
+  {
+   "id": 129,
+   "type": "message",
+   "date": "2026-08-20T10:30:00",
+   "date_unixtime": "1787232600",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "lo vi, está bien. yo cambiaría el paso 3",
+   "text_entities": []
+  },
+  {
+   "id": 130,
+   "type": "message",
+   "date": "2026-08-25T17:45:00",
+   "date_unixtime": "1787690700",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "se cayó el cron de facturación, hay 40 facturas sin emitir y mañana es el vencimiento",
+   "text_entities": []
+  },
+  {
+   "id": 131,
+   "type": "message",
+   "date": "2026-08-25T18:02:19",
+   "date_unixtime": "1787691739",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "lo tomo yo",
+   "text_entities": []
+  },
+  {
+   "id": 132,
+   "type": "message",
+   "date": "2026-08-25T21:38:44",
+   "date_unixtime": "1787704724",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "arreglé el cron de facturación, era la zona horaria después del cambio de servidor. corrí las 40 a mano, ya están emitidas",
+   "text_entities": []
+  },
+  {
+   "id": 133,
+   "type": "message",
+   "date": "2026-08-25T21:45:00",
+   "date_unixtime": "1787705100",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "gracias lu, mañana hablamos",
+   "text_entities": []
+  },
+  {
+   "id": 134,
+   "type": "message",
+   "date": "2026-08-26T09:00:00",
+   "date_unixtime": "1787745600",
+   "from": "Jose",
+   "from_id": "user5334",
+   "text": "buen día",
+   "text_entities": []
+  },
+  {
+   "id": 135,
+   "type": "message",
+   "date": "2026-08-26T09:01:00",
+   "date_unixtime": "1787745660",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "buenas",
+   "text_entities": []
+  },
+  {
+   "id": 136,
+   "type": "message",
+   "date": "2026-08-27T14:00:00",
+   "date_unixtime": "1787850000",
+   "from": "Marta",
+   "from_id": "user49420",
+   "text": "el onboarding nuevo queda para septiembre, no llegamos",
+   "text_entities": []
+  },
+  {
+   "id": 137,
+   "type": "message",
+   "date": "2026-08-27T14:02:00",
+   "date_unixtime": "1787850120",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "ok",
+   "text_entities": []
+  },
+  {
+   "id": 138,
+   "type": "message",
+   "date": "2026-08-28T16:30:00",
+   "date_unixtime": "1787945400",
+   "from": "Lu",
+   "from_id": "user18264",
+   "text": "mañana tengo el 1:1 con Marta, si alguien necesita algo de mí que sea hoy",
+   "text_entities": []
+  },
+  {
+   "id": 139,
+   "type": "message",
+   "date": "2026-08-28T16:31:00",
+   "date_unixtime": "1787945460",
+   "from": "Nestor",
+   "from_id": "user97589",
+   "text": "todo bien acá",
+   "text_entities": []
+  }
+ ]
+}

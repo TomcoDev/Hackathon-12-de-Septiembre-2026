@@ -1,0 +1,2113 @@
+{
+ "name": "Equipo Producto",
+ "type": "private_supergroup",
+ "id": 2233445566,
+ "messages": [
+  {
+   "id": 1001,
+   "type": "message",
+   "date": "2026-08-03T08:53:28",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buen día, hoy trabajo desde casa"
+  },
+  {
+   "id": 1002,
+   "type": "message",
+   "date": "2026-08-03T09:02:28",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "buen lunes. este mes vamos por tres cosas: onboarding nuevo, migrar pagos a v2, y bajar la deuda de soporte. lo demás espera"
+  },
+  {
+   "id": 1003,
+   "type": "message",
+   "date": "2026-08-03T09:05:24",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "dale"
+  },
+  {
+   "id": 1004,
+   "type": "message",
+   "date": "2026-08-03T09:06:15",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "ok"
+  },
+  {
+   "id": 1005,
+   "type": "message",
+   "date": "2026-08-03T09:07:12",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "va"
+  },
+  {
+   "id": 1006,
+   "type": "message",
+   "date": "2026-08-03T09:09:42",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "👍"
+  },
+  {
+   "id": 1007,
+   "type": "message",
+   "date": "2026-08-03T09:25:42",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "buenas"
+  },
+  {
+   "id": 1008,
+   "type": "message",
+   "date": "2026-08-03T09:27:36",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "hola hola"
+  },
+  {
+   "id": 1009,
+   "type": "message",
+   "date": "2026-08-03T09:54:18",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "hola hola"
+  },
+  {
+   "id": 1010,
+   "type": "message",
+   "date": "2026-08-03T11:07:52",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "😂"
+  },
+  {
+   "id": 1011,
+   "type": "message",
+   "date": "2026-08-03T11:29:27",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "puede ser"
+  },
+  {
+   "id": 1012,
+   "type": "message",
+   "date": "2026-08-03T11:31:03",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "buenísimo"
+  },
+  {
+   "id": 1013,
+   "type": "message",
+   "date": "2026-08-03T11:40:57",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "alguien vio el ticket del login? hay 6 clientes que no pueden entrar desde ayer, me están matando"
+  },
+  {
+   "id": 1014,
+   "type": "message",
+   "date": "2026-08-03T11:41:23",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "lo miro ahora, dejo lo de onboarding un rato"
+  },
+  {
+   "id": 1015,
+   "type": "message",
+   "date": "2026-08-03T13:48:48",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "no sé"
+  },
+  {
+   "id": 1016,
+   "type": "message",
+   "date": "2026-08-03T14:22:14",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "listo, ya subí el fix del timeout del login. era el pool de conexiones que se quedaba sin slots"
+  },
+  {
+   "id": 1017,
+   "type": "message",
+   "date": "2026-08-03T14:25:03",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "gracias lu, con eso les aviso a los 6. te debo una",
+   "reply_to_message_id": 1016
+  },
+  {
+   "id": 1018,
+   "type": "message",
+   "date": "2026-08-03T14:26:25",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "👏"
+  },
+  {
+   "id": 1019,
+   "type": "message",
+   "date": "2026-08-04T08:58:14",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "buenas"
+  },
+  {
+   "id": 1020,
+   "type": "message",
+   "date": "2026-08-04T09:01:32",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "miren esto https://x.com/i/status/1893"
+  },
+  {
+   "id": 1021,
+   "type": "message",
+   "date": "2026-08-04T09:13:39",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "buen día"
+  },
+  {
+   "id": 1022,
+   "type": "message",
+   "date": "2026-08-04T09:30:07",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "mm"
+  },
+  {
+   "id": 1023,
+   "type": "message",
+   "date": "2026-08-04T09:56:51",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buen día, hoy trabajo desde casa"
+  },
+  {
+   "id": 1024,
+   "type": "message",
+   "date": "2026-08-04T10:28:13",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "alguien tiene el link de la daily?"
+  },
+  {
+   "id": 1025,
+   "type": "message",
+   "date": "2026-08-04T12:23:22",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "ok"
+  },
+  {
+   "id": 1026,
+   "type": "message",
+   "date": "2026-08-04T12:40:46",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "el de siempre?"
+  },
+  {
+   "id": 1027,
+   "type": "message",
+   "date": "2026-08-04T16:07:30",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "alguien tiene el link de la daily?"
+  },
+  {
+   "id": 1028,
+   "type": "message",
+   "date": "2026-08-04T19:06:25",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "sí"
+  },
+  {
+   "id": 1029,
+   "type": "message",
+   "date": "2026-08-05T08:50:03",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "buenass"
+  },
+  {
+   "id": 1030,
+   "type": "message",
+   "date": "2026-08-05T09:14:19",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "sí"
+  },
+  {
+   "id": 1031,
+   "type": "message",
+   "date": "2026-08-05T09:20:08",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "llego 10 min tarde, tráfico"
+  },
+  {
+   "id": 1032,
+   "type": "message",
+   "date": "2026-08-05T09:20:58",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "listo"
+  },
+  {
+   "id": 1033,
+   "type": "message",
+   "date": "2026-08-05T09:39:29",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buen día"
+  },
+  {
+   "id": 1034,
+   "type": "message",
+   "date": "2026-08-05T10:10:29",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "mañana tengo demo con Nuevo Banco a las 9. hay algún ambiente con datos que no sean los de prueba rotos?"
+  },
+  {
+   "id": 1035,
+   "type": "message",
+   "date": "2026-08-05T10:12:36",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "staging está roto desde la semana pasada"
+  },
+  {
+   "id": 1036,
+   "type": "message",
+   "date": "2026-08-05T12:04:35",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1037,
+   "type": "message",
+   "date": "2026-08-05T12:14:26",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "el de siempre?"
+  },
+  {
+   "id": 1038,
+   "type": "message",
+   "date": "2026-08-05T12:21:17",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "almuerzo?"
+  },
+  {
+   "id": 1039,
+   "type": "message",
+   "date": "2026-08-05T12:52:25",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "va"
+  },
+  {
+   "id": 1040,
+   "type": "message",
+   "date": "2026-08-05T14:45:06",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "listo"
+  },
+  {
+   "id": 1041,
+   "type": "message",
+   "date": "2026-08-05T15:02:12",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "la impresora no anda"
+  },
+  {
+   "id": 1042,
+   "type": "message",
+   "date": "2026-08-05T16:48:04",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "listo, ya dejé andando el staging con datos de prueba coherentes para la demo de mañana. usuario demo@nb, clave la de siempre"
+  },
+  {
+   "id": 1043,
+   "type": "message",
+   "date": "2026-08-05T16:50:35",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "gracias lu, me salvaste la demo",
+   "reply_to_message_id": 1042
+  },
+  {
+   "id": 1044,
+   "type": "message",
+   "date": "2026-08-05T16:54:14",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "quién tiene la llave del depósito?"
+  },
+  {
+   "id": 1045,
+   "type": "message",
+   "date": "2026-08-05T18:16:43",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "listo"
+  },
+  {
+   "id": 1046,
+   "type": "message",
+   "date": "2026-08-06T08:11:31",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buen día, hoy trabajo desde casa"
+  },
+  {
+   "id": 1047,
+   "type": "message",
+   "date": "2026-08-06T08:36:44",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "hola hola"
+  },
+  {
+   "id": 1048,
+   "type": "message",
+   "date": "2026-08-06T08:51:56",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "buen día, hoy trabajo desde casa"
+  },
+  {
+   "id": 1049,
+   "type": "message",
+   "date": "2026-08-06T09:08:35",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "dale"
+  },
+  {
+   "id": 1050,
+   "type": "message",
+   "date": "2026-08-06T09:22:18",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "puede ser"
+  },
+  {
+   "id": 1051,
+   "type": "message",
+   "date": "2026-08-06T09:44:13",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "👍"
+  },
+  {
+   "id": 1052,
+   "type": "message",
+   "date": "2026-08-06T09:53:12",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "buenas"
+  },
+  {
+   "id": 1053,
+   "type": "message",
+   "date": "2026-08-06T12:20:40",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "almuerzo?"
+  },
+  {
+   "id": 1054,
+   "type": "message",
+   "date": "2026-08-06T12:28:57",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1055,
+   "type": "message",
+   "date": "2026-08-06T13:44:30",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1056,
+   "type": "message",
+   "date": "2026-08-06T15:03:50",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "jaja"
+  },
+  {
+   "id": 1057,
+   "type": "message",
+   "date": "2026-08-06T15:30:04",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "subí la primera versión del flujo de onboarding, falta el paso de verificación de identidad. pueden probar en staging"
+  },
+  {
+   "id": 1058,
+   "type": "message",
+   "date": "2026-08-06T15:45:09",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "lo vi, el paso 2 tiene el botón muy chico en mobile"
+  },
+  {
+   "id": 1059,
+   "type": "message",
+   "date": "2026-08-06T15:47:02",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "cierto, lo cambio"
+  },
+  {
+   "id": 1060,
+   "type": "message",
+   "date": "2026-08-06T16:22:07",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "dale"
+  },
+  {
+   "id": 1061,
+   "type": "message",
+   "date": "2026-08-06T17:22:29",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "jaja"
+  },
+  {
+   "id": 1062,
+   "type": "message",
+   "date": "2026-08-06T18:54:50",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "alguien vio el cargador de la sala?"
+  },
+  {
+   "id": 1063,
+   "type": "message",
+   "date": "2026-08-07T08:59:52",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "hola hola"
+  },
+  {
+   "id": 1064,
+   "type": "message",
+   "date": "2026-08-07T11:00:57",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "subí el diseño nuevo del onboarding a figma, miren cuando puedan"
+  },
+  {
+   "id": 1065,
+   "type": "message",
+   "date": "2026-08-07T11:30:31",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "me gusta. el paso 3 lo simplificaría"
+  },
+  {
+   "id": 1066,
+   "type": "message",
+   "date": "2026-08-07T12:38:34",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "tereré en la terraza?"
+  },
+  {
+   "id": 1067,
+   "type": "message",
+   "date": "2026-08-07T12:38:50",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "tereré en la terraza?"
+  },
+  {
+   "id": 1068,
+   "type": "message",
+   "date": "2026-08-07T13:12:37",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1069,
+   "type": "message",
+   "date": "2026-08-07T14:58:41",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "miren esto https://x.com/i/status/1893"
+  },
+  {
+   "id": 1070,
+   "type": "message",
+   "date": "2026-08-07T16:14:18",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "alguien vio el cargador de la sala?"
+  },
+  {
+   "id": 1071,
+   "type": "message",
+   "date": "2026-08-07T18:08:38",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "alguien vio el cargador de la sala?"
+  },
+  {
+   "id": 1072,
+   "type": "message",
+   "date": "2026-08-07T19:01:01",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "va"
+  },
+  {
+   "id": 1073,
+   "type": "message",
+   "date": "2026-08-10T08:52:36",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buen día gente"
+  },
+  {
+   "id": 1074,
+   "type": "message",
+   "date": "2026-08-10T09:16:21",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "hola hola"
+  },
+  {
+   "id": 1075,
+   "type": "message",
+   "date": "2026-08-10T10:11:22",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "quién dejó la puerta abierta"
+  },
+  {
+   "id": 1076,
+   "type": "message",
+   "date": "2026-08-10T10:14:16",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "ok"
+  },
+  {
+   "id": 1077,
+   "type": "message",
+   "date": "2026-08-10T10:15:05",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "no me anda el build de la extensión desde que actualicé node, tira un error de esbuild que no entiendo"
+  },
+  {
+   "id": 1078,
+   "type": "message",
+   "date": "2026-08-10T10:22:37",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "probá borrando node_modules y el lockfile, a mí me pasó lo mismo la semana pasada con la 22"
+  },
+  {
+   "id": 1079,
+   "type": "message",
+   "date": "2026-08-10T10:31:29",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "ok"
+  },
+  {
+   "id": 1080,
+   "type": "message",
+   "date": "2026-08-10T10:41:33",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "salió, gracias lu. dos horas perdidas por eso",
+   "reply_to_message_id": 1078
+  },
+  {
+   "id": 1081,
+   "type": "message",
+   "date": "2026-08-10T10:42:43",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "tranqui"
+  },
+  {
+   "id": 1082,
+   "type": "message",
+   "date": "2026-08-10T11:58:30",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "hoy hay asado en lo de diego, anótense"
+  },
+  {
+   "id": 1083,
+   "type": "message",
+   "date": "2026-08-10T12:06:54",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "ok"
+  },
+  {
+   "id": 1084,
+   "type": "message",
+   "date": "2026-08-10T12:32:50",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1085,
+   "type": "message",
+   "date": "2026-08-10T13:32:09",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "voy en 10"
+  },
+  {
+   "id": 1086,
+   "type": "message",
+   "date": "2026-08-10T13:46:47",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "voy en 10"
+  },
+  {
+   "id": 1087,
+   "type": "message",
+   "date": "2026-08-10T13:52:07",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "hoy hay asado en lo de diego, anótense"
+  },
+  {
+   "id": 1088,
+   "type": "message",
+   "date": "2026-08-10T13:59:40",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1089,
+   "type": "message",
+   "date": "2026-08-10T14:28:03",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "va"
+  },
+  {
+   "id": 1090,
+   "type": "message",
+   "date": "2026-08-11T08:31:10",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buenass"
+  },
+  {
+   "id": 1091,
+   "type": "message",
+   "date": "2026-08-11T12:07:50",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "tereré en la terraza?"
+  },
+  {
+   "id": 1092,
+   "type": "message",
+   "date": "2026-08-11T12:20:41",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "jajaja"
+  },
+  {
+   "id": 1093,
+   "type": "message",
+   "date": "2026-08-11T13:33:40",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "listo"
+  },
+  {
+   "id": 1094,
+   "type": "message",
+   "date": "2026-08-11T14:36:14",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "dale"
+  },
+  {
+   "id": 1095,
+   "type": "message",
+   "date": "2026-08-11T16:03:33",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "cómo vamos con pagos v2? el viernes tengo reunión con finanzas"
+  },
+  {
+   "id": 1096,
+   "type": "message",
+   "date": "2026-08-11T16:10:57",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "armé el comparativo postgres vs dynamo para pagos v2, está en el drive. yo iría por postgres por los reportes"
+  },
+  {
+   "id": 1097,
+   "type": "message",
+   "date": "2026-08-11T16:15:28",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "decidimos ir con postgres entonces. lu, mandame el doc",
+   "reply_to_message_id": 1096
+  },
+  {
+   "id": 1098,
+   "type": "message",
+   "date": "2026-08-11T16:16:58",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "va"
+  },
+  {
+   "id": 1099,
+   "type": "message",
+   "date": "2026-08-11T17:15:55",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "dale"
+  },
+  {
+   "id": 1100,
+   "type": "message",
+   "date": "2026-08-11T18:00:50",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "uf"
+  },
+  {
+   "id": 1101,
+   "type": "message",
+   "date": "2026-08-12T08:27:21",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "buenass"
+  },
+  {
+   "id": 1102,
+   "type": "message",
+   "date": "2026-08-12T09:20:50",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "un cliente dice que le cobramos dos veces el mismo pedido. es el tercero esta semana"
+  },
+  {
+   "id": 1103,
+   "type": "message",
+   "date": "2026-08-12T11:23:58",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "va"
+  },
+  {
+   "id": 1104,
+   "type": "message",
+   "date": "2026-08-12T12:05:04",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "lo miré, fue un reintento del webhook de pagos. ya devolví los cobros duplicados y agregué idempotencia para que no pase más"
+  },
+  {
+   "id": 1105,
+   "type": "message",
+   "date": "2026-08-12T12:08:27",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "gracias lu, les aviso a los tres",
+   "reply_to_message_id": 1104
+  },
+  {
+   "id": 1106,
+   "type": "message",
+   "date": "2026-08-12T12:15:30",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1107,
+   "type": "message",
+   "date": "2026-08-12T12:30:50",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "bien"
+  },
+  {
+   "id": 1108,
+   "type": "message",
+   "date": "2026-08-12T12:31:24",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1109,
+   "type": "message",
+   "date": "2026-08-12T13:10:46",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1110,
+   "type": "message",
+   "date": "2026-08-12T14:48:04",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1111,
+   "type": "message",
+   "date": "2026-08-12T15:44:11",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "mañana feriado? alguien sabe"
+  },
+  {
+   "id": 1112,
+   "type": "message",
+   "date": "2026-08-12T16:32:55",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "jaja"
+  },
+  {
+   "id": 1113,
+   "type": "message",
+   "date": "2026-08-12T16:53:40",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "el aire está roto otra vez"
+  },
+  {
+   "id": 1114,
+   "type": "message",
+   "date": "2026-08-12T17:29:40",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "se cayó el wifi de la oficina?"
+  },
+  {
+   "id": 1115,
+   "type": "message",
+   "date": "2026-08-13T08:41:21",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "buenass"
+  },
+  {
+   "id": 1116,
+   "type": "message",
+   "date": "2026-08-13T08:44:27",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "buen día gente"
+  },
+  {
+   "id": 1117,
+   "type": "message",
+   "date": "2026-08-13T09:46:24",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "reunión en 5"
+  },
+  {
+   "id": 1118,
+   "type": "message",
+   "date": "2026-08-13T09:47:25",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "hola hola"
+  },
+  {
+   "id": 1119,
+   "type": "message",
+   "date": "2026-08-13T13:07:18",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "dale"
+  },
+  {
+   "id": 1120,
+   "type": "message",
+   "date": "2026-08-13T13:14:45",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "jajaja"
+  },
+  {
+   "id": 1121,
+   "type": "message",
+   "date": "2026-08-13T13:38:27",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1122,
+   "type": "message",
+   "date": "2026-08-13T18:33:17",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "jajaja"
+  },
+  {
+   "id": 1123,
+   "type": "message",
+   "date": "2026-08-14T08:13:10",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "buenas"
+  },
+  {
+   "id": 1124,
+   "type": "message",
+   "date": "2026-08-14T08:22:02",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "llego 10 min tarde, tráfico"
+  },
+  {
+   "id": 1125,
+   "type": "message",
+   "date": "2026-08-14T09:18:52",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "hola hola"
+  },
+  {
+   "id": 1126,
+   "type": "message",
+   "date": "2026-08-14T09:38:47",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "listo"
+  },
+  {
+   "id": 1127,
+   "type": "message",
+   "date": "2026-08-14T11:32:51",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "no sé"
+  },
+  {
+   "id": 1128,
+   "type": "message",
+   "date": "2026-08-14T13:10:16",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "alguien tiene el link de la daily?"
+  },
+  {
+   "id": 1129,
+   "type": "message",
+   "date": "2026-08-14T13:27:24",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "dale"
+  },
+  {
+   "id": 1130,
+   "type": "message",
+   "date": "2026-08-14T13:37:29",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "el de siempre?"
+  },
+  {
+   "id": 1131,
+   "type": "message",
+   "date": "2026-08-14T13:49:48",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "jaja"
+  },
+  {
+   "id": 1132,
+   "type": "message",
+   "date": "2026-08-14T15:13:38",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "miren esto https://x.com/i/status/1893"
+  },
+  {
+   "id": 1133,
+   "type": "message",
+   "date": "2026-08-14T16:52:34",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "feliz cumple caro! 🎂"
+  },
+  {
+   "id": 1134,
+   "type": "message",
+   "date": "2026-08-14T17:00:12",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "quién puede cubrir el on-call del finde?"
+  },
+  {
+   "id": 1135,
+   "type": "message",
+   "date": "2026-08-14T17:05:29",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "yo lo tomo"
+  },
+  {
+   "id": 1136,
+   "type": "message",
+   "date": "2026-08-14T17:06:00",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "gracias"
+  },
+  {
+   "id": 1137,
+   "type": "message",
+   "date": "2026-08-14T18:37:16",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "uf"
+  },
+  {
+   "id": 1138,
+   "type": "message",
+   "date": "2026-08-14T19:11:53",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "listo"
+  },
+  {
+   "id": 1139,
+   "type": "message",
+   "date": "2026-08-14T19:29:16",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "jaja"
+  },
+  {
+   "id": 1140,
+   "type": "message",
+   "date": "2026-08-17T08:39:10",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "llego 10 min tarde, tráfico"
+  },
+  {
+   "id": 1141,
+   "type": "message",
+   "date": "2026-08-17T08:45:26",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "el finde saltaron 2 alertas, las dos falsas por el disco lleno del server de logs. agregué rotación de logs, no va a pasar más"
+  },
+  {
+   "id": 1142,
+   "type": "message",
+   "date": "2026-08-17T08:50:29",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "uf, gracias lu. yo el finde pasado lo apagué y prendí nomás",
+   "reply_to_message_id": 1141
+  },
+  {
+   "id": 1143,
+   "type": "message",
+   "date": "2026-08-17T09:40:47",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "hola hola"
+  },
+  {
+   "id": 1144,
+   "type": "message",
+   "date": "2026-08-17T11:03:23",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "mm"
+  },
+  {
+   "id": 1145,
+   "type": "message",
+   "date": "2026-08-17T12:05:33",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1146,
+   "type": "message",
+   "date": "2026-08-17T12:24:47",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1147,
+   "type": "message",
+   "date": "2026-08-17T13:41:29",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1148,
+   "type": "message",
+   "date": "2026-08-18T09:30:18",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "los de Tigo están enojados por el retraso del reporte mensual, escribieron 3 veces"
+  },
+  {
+   "id": 1149,
+   "type": "message",
+   "date": "2026-08-18T09:31:47",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "alguien que los llame hoy"
+  },
+  {
+   "id": 1150,
+   "type": "message",
+   "date": "2026-08-18T09:47:21",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "buen día gente"
+  },
+  {
+   "id": 1151,
+   "type": "message",
+   "date": "2026-08-18T11:05:32",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "hablé con los de Tigo, les expliqué que el retraso es por la migración y quedaron tranquilos hasta el jueves. les prometí el reporte parcial mañana"
+  },
+  {
+   "id": 1152,
+   "type": "message",
+   "date": "2026-08-18T11:07:53",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "gracias lu, me sacaste un peso",
+   "reply_to_message_id": 1151
+  },
+  {
+   "id": 1153,
+   "type": "message",
+   "date": "2026-08-18T11:08:32",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "gracias"
+  },
+  {
+   "id": 1154,
+   "type": "message",
+   "date": "2026-08-18T11:21:37",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "el café se terminó"
+  },
+  {
+   "id": 1155,
+   "type": "message",
+   "date": "2026-08-18T12:02:33",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1156,
+   "type": "message",
+   "date": "2026-08-18T12:26:57",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "tereré en la terraza?"
+  },
+  {
+   "id": 1157,
+   "type": "message",
+   "date": "2026-08-18T12:27:20",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1158,
+   "type": "message",
+   "date": "2026-08-18T13:25:36",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "alguien tiene el link de la daily?"
+  },
+  {
+   "id": 1159,
+   "type": "message",
+   "date": "2026-08-18T13:54:24",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "ok"
+  },
+  {
+   "id": 1160,
+   "type": "message",
+   "date": "2026-08-18T15:09:31",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "quién dejó la puerta abierta"
+  },
+  {
+   "id": 1161,
+   "type": "message",
+   "date": "2026-08-18T19:05:48",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "quién dejó la puerta abierta"
+  },
+  {
+   "id": 1162,
+   "type": "message",
+   "date": "2026-08-19T09:13:56",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "llego 10 min tarde, tráfico"
+  },
+  {
+   "id": 1163,
+   "type": "message",
+   "date": "2026-08-19T09:34:48",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "jajaja"
+  },
+  {
+   "id": 1164,
+   "type": "message",
+   "date": "2026-08-19T09:35:09",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "quién dejó la puerta abierta"
+  },
+  {
+   "id": 1165,
+   "type": "message",
+   "date": "2026-08-19T09:39:41",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "hola hola"
+  },
+  {
+   "id": 1166,
+   "type": "message",
+   "date": "2026-08-19T12:51:25",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "mañana feriado? alguien sabe"
+  },
+  {
+   "id": 1167,
+   "type": "message",
+   "date": "2026-08-19T13:00:56",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1168,
+   "type": "message",
+   "date": "2026-08-19T13:11:23",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1169,
+   "type": "message",
+   "date": "2026-08-19T13:29:48",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "hay empanadas en la cocina"
+  },
+  {
+   "id": 1170,
+   "type": "message",
+   "date": "2026-08-19T13:37:54",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1171,
+   "type": "message",
+   "date": "2026-08-19T14:00:05",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "alguien sabe por qué el pipeline de CI tarda 40 minutos? no puedo mergear nada"
+  },
+  {
+   "id": 1172,
+   "type": "message",
+   "date": "2026-08-19T14:40:59",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "👍"
+  },
+  {
+   "id": 1173,
+   "type": "message",
+   "date": "2026-08-19T14:41:18",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "uf"
+  },
+  {
+   "id": 1174,
+   "type": "message",
+   "date": "2026-08-19T17:20:57",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "era el paso de tests e2e que corría serial. lo paralelicé en 4 workers, ahora tarda 12 minutos"
+  },
+  {
+   "id": 1175,
+   "type": "message",
+   "date": "2026-08-19T17:25:28",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "gracias lu, eso nos cambia el día a todos",
+   "reply_to_message_id": 1174
+  },
+  {
+   "id": 1176,
+   "type": "message",
+   "date": "2026-08-19T17:26:19",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "🙌"
+  },
+  {
+   "id": 1177,
+   "type": "message",
+   "date": "2026-08-19T18:31:31",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "no sé"
+  },
+  {
+   "id": 1178,
+   "type": "message",
+   "date": "2026-08-19T19:39:47",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "buenísimo"
+  },
+  {
+   "id": 1179,
+   "type": "message",
+   "date": "2026-08-20T09:14:31",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "buenass"
+  },
+  {
+   "id": 1180,
+   "type": "message",
+   "date": "2026-08-20T09:26:10",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "buen día"
+  },
+  {
+   "id": 1181,
+   "type": "message",
+   "date": "2026-08-20T10:00:18",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "arreglé el bug del scroll en mobile, estaba desde junio"
+  },
+  {
+   "id": 1182,
+   "type": "message",
+   "date": "2026-08-20T10:05:33",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "al fin"
+  },
+  {
+   "id": 1183,
+   "type": "message",
+   "date": "2026-08-20T11:32:23",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "hoy hay asado en lo de diego, anótense"
+  },
+  {
+   "id": 1184,
+   "type": "message",
+   "date": "2026-08-20T11:43:09",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "va"
+  },
+  {
+   "id": 1185,
+   "type": "message",
+   "date": "2026-08-20T12:06:24",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "😂"
+  },
+  {
+   "id": 1186,
+   "type": "message",
+   "date": "2026-08-20T12:19:03",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "tereré en la terraza?"
+  },
+  {
+   "id": 1187,
+   "type": "message",
+   "date": "2026-08-20T12:39:13",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "quién tiene la llave del depósito?"
+  },
+  {
+   "id": 1188,
+   "type": "message",
+   "date": "2026-08-20T13:47:37",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "hay empanadas en la cocina"
+  },
+  {
+   "id": 1189,
+   "type": "message",
+   "date": "2026-08-20T13:49:44",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1190,
+   "type": "message",
+   "date": "2026-08-20T13:52:37",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "😂"
+  },
+  {
+   "id": 1191,
+   "type": "message",
+   "date": "2026-08-20T16:13:18",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "sí"
+  },
+  {
+   "id": 1192,
+   "type": "message",
+   "date": "2026-08-20T16:59:47",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "dale"
+  },
+  {
+   "id": 1193,
+   "type": "message",
+   "date": "2026-08-21T09:16:23",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buenas"
+  },
+  {
+   "id": 1194,
+   "type": "message",
+   "date": "2026-08-21T09:30:12",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "😂"
+  },
+  {
+   "id": 1195,
+   "type": "message",
+   "date": "2026-08-21T10:24:34",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "va"
+  },
+  {
+   "id": 1196,
+   "type": "message",
+   "date": "2026-08-21T11:45:38",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "uf"
+  },
+  {
+   "id": 1197,
+   "type": "message",
+   "date": "2026-08-21T12:36:59",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1198,
+   "type": "message",
+   "date": "2026-08-21T13:45:34",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1199,
+   "type": "message",
+   "date": "2026-08-21T15:00:28",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "pagos v2, cómo vamos"
+  },
+  {
+   "id": 1200,
+   "type": "message",
+   "date": "2026-08-21T15:10:10",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "la migración de la tabla de transacciones ya está en staging, faltan los reportes. calculo dos semanas"
+  },
+  {
+   "id": 1201,
+   "type": "message",
+   "date": "2026-08-21T15:12:43",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "ok"
+  },
+  {
+   "id": 1202,
+   "type": "message",
+   "date": "2026-08-21T17:47:08",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "jaja"
+  },
+  {
+   "id": 1203,
+   "type": "message",
+   "date": "2026-08-24T09:24:02",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "buenas"
+  },
+  {
+   "id": 1204,
+   "type": "message",
+   "date": "2026-08-24T11:00:25",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "Nuevo Banco pregunta si pueden exportar a excel. lo necesitan para el cierre"
+  },
+  {
+   "id": 1205,
+   "type": "message",
+   "date": "2026-08-24T11:19:14",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "reunión en 5"
+  },
+  {
+   "id": 1206,
+   "type": "message",
+   "date": "2026-08-24T11:57:11",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "uf"
+  },
+  {
+   "id": 1207,
+   "type": "message",
+   "date": "2026-08-24T12:31:27",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "quién tiene la llave del depósito?"
+  },
+  {
+   "id": 1208,
+   "type": "message",
+   "date": "2026-08-24T16:00:21",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "dale"
+  },
+  {
+   "id": 1209,
+   "type": "message",
+   "date": "2026-08-24T16:30:02",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "hablé con ellos, les expliqué que el export sale en septiembre con pagos v2 y quedaron conformes. no hace falta hacer nada ahora"
+  },
+  {
+   "id": 1210,
+   "type": "message",
+   "date": "2026-08-24T16:35:48",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "perfecto, gracias"
+  },
+  {
+   "id": 1211,
+   "type": "message",
+   "date": "2026-08-24T17:39:03",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "jajaja"
+  },
+  {
+   "id": 1212,
+   "type": "message",
+   "date": "2026-08-24T18:09:01",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "uf"
+  },
+  {
+   "id": 1213,
+   "type": "message",
+   "date": "2026-08-25T08:42:50",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "llego 10 min tarde, tráfico"
+  },
+  {
+   "id": 1214,
+   "type": "message",
+   "date": "2026-08-25T09:26:33",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "mañana feriado? alguien sabe"
+  },
+  {
+   "id": 1215,
+   "type": "message",
+   "date": "2026-08-25T10:59:50",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "jaja"
+  },
+  {
+   "id": 1216,
+   "type": "message",
+   "date": "2026-08-25T12:03:08",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "alguien tiene el link de la daily?"
+  },
+  {
+   "id": 1217,
+   "type": "message",
+   "date": "2026-08-25T12:26:57",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1218,
+   "type": "message",
+   "date": "2026-08-25T12:26:04",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "pedimos?"
+  },
+  {
+   "id": 1219,
+   "type": "message",
+   "date": "2026-08-25T12:29:38",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "tereré en la terraza?"
+  },
+  {
+   "id": 1220,
+   "type": "message",
+   "date": "2026-08-25T12:40:51",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "feliz cumple caro! 🎂"
+  },
+  {
+   "id": 1221,
+   "type": "message",
+   "date": "2026-08-25T12:51:41",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "va"
+  },
+  {
+   "id": 1222,
+   "type": "message",
+   "date": "2026-08-25T13:46:04",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "buenísimo"
+  },
+  {
+   "id": 1223,
+   "type": "message",
+   "date": "2026-08-25T14:17:43",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1224,
+   "type": "message",
+   "date": "2026-08-25T15:33:17",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "uf"
+  },
+  {
+   "id": 1225,
+   "type": "message",
+   "date": "2026-08-25T17:45:11",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "se cayó el cron de facturación, hay 40 facturas sin emitir y mañana es el vencimiento"
+  },
+  {
+   "id": 1226,
+   "type": "message",
+   "date": "2026-08-25T18:02:34",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "lo tomo yo"
+  },
+  {
+   "id": 1227,
+   "type": "message",
+   "date": "2026-08-25T21:38:30",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "arreglé el cron de facturación, era la zona horaria después del cambio de servidor. corrí las 40 a mano, ya están emitidas"
+  },
+  {
+   "id": 1228,
+   "type": "message",
+   "date": "2026-08-25T21:45:50",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "gracias lu, mañana hablamos",
+   "reply_to_message_id": 1227
+  },
+  {
+   "id": 1229,
+   "type": "message",
+   "date": "2026-08-26T09:26:50",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "el café se terminó"
+  },
+  {
+   "id": 1230,
+   "type": "message",
+   "date": "2026-08-26T09:41:36",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buenass"
+  },
+  {
+   "id": 1231,
+   "type": "message",
+   "date": "2026-08-26T09:48:39",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "quién tiene la llave del depósito?"
+  },
+  {
+   "id": 1232,
+   "type": "message",
+   "date": "2026-08-26T10:00:19",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "alguien me da una mano con el deploy de la extensión? nunca lo hice y me da miedo romper algo"
+  },
+  {
+   "id": 1233,
+   "type": "message",
+   "date": "2026-08-26T10:10:22",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "te paso el runbook y lo hacemos juntos a las 3"
+  },
+  {
+   "id": 1234,
+   "type": "message",
+   "date": "2026-08-26T12:36:32",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "voy en 10"
+  },
+  {
+   "id": 1235,
+   "type": "message",
+   "date": "2026-08-26T12:56:05",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "ahí voy"
+  },
+  {
+   "id": 1236,
+   "type": "message",
+   "date": "2026-08-26T12:56:31",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "mm"
+  },
+  {
+   "id": 1237,
+   "type": "message",
+   "date": "2026-08-26T13:35:40",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "voy en 10"
+  },
+  {
+   "id": 1238,
+   "type": "message",
+   "date": "2026-08-26T15:24:39",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "dale"
+  },
+  {
+   "id": 1239,
+   "type": "message",
+   "date": "2026-08-26T16:20:16",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "listo, deployada. gracias lu por la paciencia",
+   "reply_to_message_id": 1233
+  },
+  {
+   "id": 1240,
+   "type": "message",
+   "date": "2026-08-26T18:20:38",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "meme del día 😂"
+  },
+  {
+   "id": 1241,
+   "type": "message",
+   "date": "2026-08-26T19:31:56",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "ok"
+  },
+  {
+   "id": 1242,
+   "type": "message",
+   "date": "2026-08-27T12:47:59",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "buenísimo"
+  },
+  {
+   "id": 1243,
+   "type": "message",
+   "date": "2026-08-27T13:23:41",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "voy en 10"
+  },
+  {
+   "id": 1244,
+   "type": "message",
+   "date": "2026-08-27T14:00:43",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "el onboarding nuevo queda para septiembre, no llegamos"
+  },
+  {
+   "id": 1245,
+   "type": "message",
+   "date": "2026-08-27T14:02:30",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "ok"
+  },
+  {
+   "id": 1246,
+   "type": "message",
+   "date": "2026-08-27T14:03:23",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "una pena, estaba casi"
+  },
+  {
+   "id": 1247,
+   "type": "message",
+   "date": "2026-08-27T14:22:06",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "mañana feriado? alguien sabe"
+  },
+  {
+   "id": 1248,
+   "type": "message",
+   "date": "2026-08-27T14:24:35",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "mañana feriado? alguien sabe"
+  },
+  {
+   "id": 1249,
+   "type": "message",
+   "date": "2026-08-27T15:40:28",
+   "from": "Jose",
+   "from_id": "user4444",
+   "text": "quién dejó la puerta abierta"
+  },
+  {
+   "id": 1250,
+   "type": "message",
+   "date": "2026-08-27T16:52:46",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "sí"
+  },
+  {
+   "id": 1251,
+   "type": "message",
+   "date": "2026-08-28T08:25:20",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "buen día"
+  },
+  {
+   "id": 1252,
+   "type": "message",
+   "date": "2026-08-28T09:48:09",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "va"
+  },
+  {
+   "id": 1253,
+   "type": "message",
+   "date": "2026-08-28T09:55:15",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "buen día, hoy trabajo desde casa"
+  },
+  {
+   "id": 1254,
+   "type": "message",
+   "date": "2026-08-28T12:02:13",
+   "from": "Diego",
+   "from_id": "user6666",
+   "text": "alguien tiene el link de la daily?"
+  },
+  {
+   "id": 1255,
+   "type": "message",
+   "date": "2026-08-28T12:48:02",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "yo paso hoy"
+  },
+  {
+   "id": 1256,
+   "type": "message",
+   "date": "2026-08-28T15:42:19",
+   "from": "Marta",
+   "from_id": "user2222",
+   "text": "se cayó el wifi de la oficina?"
+  },
+  {
+   "id": 1257,
+   "type": "message",
+   "date": "2026-08-28T16:30:11",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "mañana tengo el 1:1 con marta, si alguien necesita algo de mí que sea hoy"
+  },
+  {
+   "id": 1258,
+   "type": "message",
+   "date": "2026-08-28T16:31:57",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "todo bien acá"
+  },
+  {
+   "id": 1259,
+   "type": "message",
+   "date": "2026-08-28T16:32:44",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "nada, gracias"
+  },
+  {
+   "id": 1260,
+   "type": "message",
+   "date": "2026-08-28T17:38:06",
+   "from": "Lu",
+   "from_id": "user1111",
+   "text": "va"
+  },
+  {
+   "id": 1261,
+   "type": "message",
+   "date": "2026-08-28T18:35:41",
+   "from": "Nestor",
+   "from_id": "user3333",
+   "text": "meme del día 😂"
+  },
+  {
+   "id": 1262,
+   "type": "message",
+   "date": "2026-08-28T18:39:10",
+   "from": "Caro",
+   "from_id": "user5555",
+   "text": "uf"
+  }
+ ]
+}

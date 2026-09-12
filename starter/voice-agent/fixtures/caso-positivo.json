@@ -1,0 +1,12 @@
+{
+  "nombre": "caso-positivo: acuerdan sobre cosas distintas",
+  "esperado": "interviene",
+  "frases": [
+    ["Ana", "Bueno, entonces cerramos la entrega para el viernes."],
+    ["Ben", "Okay, so we deliver the prototype on Friday, that works for me."],
+    ["Ana", "Perfecto. Con la entrega me refiero a la version final, la que va a produccion."],
+    ["Ben", "Right, the prototype. I'll have the demo ready."],
+    ["Ana", "Dale, entonces el viernes ya queda la entrega andando para los clientes."],
+    ["Ben", "Sounds good, the demo will show the main flow."]
+  ]
+}

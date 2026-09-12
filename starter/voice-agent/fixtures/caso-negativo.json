@@ -1,0 +1,12 @@
+{
+  "nombre": "caso-negativo: dos idiomas pero se entienden perfecto",
+  "esperado": "silencio",
+  "frases": [
+    ["Ana", "Necesitamos decidir el color del boton principal."],
+    ["Ben", "I vote for blue, it matches the rest of the brand."],
+    ["Ana", "Azul me parece bien tambien, el mismo azul del logo."],
+    ["Ben", "Exactly, the logo blue. Same hex value."],
+    ["Ana", "Perfecto, el hex del logo. Lo dejamos asi."],
+    ["Ben", "Great, logo blue it is."]
+  ]
+}

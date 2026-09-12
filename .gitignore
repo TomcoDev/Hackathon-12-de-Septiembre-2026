@@ -30,3 +30,9 @@ Thumbs.db
 *.mp4
 *.mov
 *.mkv
+
+# EL TESTIGO: el export del grupo real es privado. Solo se suben los datasets sinteticos.
+starter/testigo/data/*
+!starter/testigo/data/.gitkeep
+!starter/testigo/data/ejemplo.jsonl
+!starter/testigo/data/seed.jsonl

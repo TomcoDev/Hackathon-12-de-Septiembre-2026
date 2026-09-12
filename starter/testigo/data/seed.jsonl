@@ -1,0 +1,262 @@
+{"id":"m_1001","ts":"2026-08-03T11:53:28.000Z","canal":"#equipo","autor":"nestor","texto":"buen día, hoy trabajo desde casa","thread_id":"t_1001","link":"https://t.me/c/2233445566/1001"}
+{"id":"m_1002","ts":"2026-08-03T12:02:28.000Z","canal":"#equipo","autor":"marta","texto":"buen lunes. este mes vamos por tres cosas: onboarding nuevo, migrar pagos a v2, y bajar la deuda de soporte. lo demás espera","thread_id":"t_1001","link":"https://t.me/c/2233445566/1002"}
+{"id":"m_1003","ts":"2026-08-03T12:05:24.000Z","canal":"#equipo","autor":"lu","texto":"dale","thread_id":"t_1001","link":"https://t.me/c/2233445566/1003"}
+{"id":"m_1004","ts":"2026-08-03T12:06:15.000Z","canal":"#equipo","autor":"jose","texto":"ok","thread_id":"t_1001","link":"https://t.me/c/2233445566/1004"}
+{"id":"m_1005","ts":"2026-08-03T12:07:12.000Z","canal":"#equipo","autor":"nestor","texto":"va","thread_id":"t_1001","link":"https://t.me/c/2233445566/1005"}
+{"id":"m_1006","ts":"2026-08-03T12:09:42.000Z","canal":"#equipo","autor":"caro","texto":"👍","thread_id":"t_1001","link":"https://t.me/c/2233445566/1006"}
+{"id":"m_1007","ts":"2026-08-03T12:25:42.000Z","canal":"#equipo","autor":"lu","texto":"buenas","thread_id":"t_1001","link":"https://t.me/c/2233445566/1007"}
+{"id":"m_1008","ts":"2026-08-03T12:27:36.000Z","canal":"#equipo","autor":"marta","texto":"hola hola","thread_id":"t_1001","link":"https://t.me/c/2233445566/1008"}
+{"id":"m_1009","ts":"2026-08-03T12:54:18.000Z","canal":"#equipo","autor":"lu","texto":"hola hola","thread_id":"t_1009","link":"https://t.me/c/2233445566/1009"}
+{"id":"m_1010","ts":"2026-08-03T14:07:52.000Z","canal":"#equipo","autor":"marta","texto":"😂","thread_id":"t_1010","link":"https://t.me/c/2233445566/1010"}
+{"id":"m_1011","ts":"2026-08-03T14:29:27.000Z","canal":"#equipo","autor":"caro","texto":"puede ser","thread_id":"t_1011","link":"https://t.me/c/2233445566/1011"}
+{"id":"m_1012","ts":"2026-08-03T14:31:03.000Z","canal":"#equipo","autor":"marta","texto":"buenísimo","thread_id":"t_1011","link":"https://t.me/c/2233445566/1012"}
+{"id":"m_1013","ts":"2026-08-03T14:40:57.000Z","canal":"#equipo","autor":"caro","texto":"alguien vio el ticket del login? hay 6 clientes que no pueden entrar desde ayer, me están matando","thread_id":"t_1011","link":"https://t.me/c/2233445566/1013"}
+{"id":"m_1014","ts":"2026-08-03T14:41:23.000Z","canal":"#equipo","autor":"lu","texto":"lo miro ahora, dejo lo de onboarding un rato","thread_id":"t_1011","link":"https://t.me/c/2233445566/1014"}
+{"id":"m_1015","ts":"2026-08-03T16:48:48.000Z","canal":"#equipo","autor":"nestor","texto":"no sé","thread_id":"t_1015","link":"https://t.me/c/2233445566/1015"}
+{"id":"m_1016","ts":"2026-08-03T17:22:14.000Z","canal":"#equipo","autor":"lu","texto":"listo, ya subí el fix del timeout del login. era el pool de conexiones que se quedaba sin slots","thread_id":"t_1016","link":"https://t.me/c/2233445566/1016"}
+{"id":"m_1017","ts":"2026-08-03T17:25:03.000Z","canal":"#equipo","autor":"caro","texto":"gracias lu, con eso les aviso a los 6. te debo una","thread_id":"t_1016","link":"https://t.me/c/2233445566/1017","reply_to":"m_1016"}
+{"id":"m_1018","ts":"2026-08-03T17:26:25.000Z","canal":"#equipo","autor":"jose","texto":"👏","thread_id":"t_1016","link":"https://t.me/c/2233445566/1018"}
+{"id":"m_1019","ts":"2026-08-04T11:58:14.000Z","canal":"#equipo","autor":"jose","texto":"buenas","thread_id":"t_1019","link":"https://t.me/c/2233445566/1019"}
+{"id":"m_1020","ts":"2026-08-04T12:01:32.000Z","canal":"#equipo","autor":"jose","texto":"miren esto https://x.com/i/status/1893","thread_id":"t_1019","link":"https://t.me/c/2233445566/1020"}
+{"id":"m_1021","ts":"2026-08-04T12:13:39.000Z","canal":"#equipo","autor":"lu","texto":"buen día","thread_id":"t_1019","link":"https://t.me/c/2233445566/1021"}
+{"id":"m_1022","ts":"2026-08-04T12:30:07.000Z","canal":"#equipo","autor":"lu","texto":"mm","thread_id":"t_1019","link":"https://t.me/c/2233445566/1022"}
+{"id":"m_1023","ts":"2026-08-04T12:56:51.000Z","canal":"#equipo","autor":"nestor","texto":"buen día, hoy trabajo desde casa","thread_id":"t_1023","link":"https://t.me/c/2233445566/1023"}
+{"id":"m_1024","ts":"2026-08-04T13:28:13.000Z","canal":"#equipo","autor":"diego","texto":"alguien tiene el link de la daily?","thread_id":"t_1024","link":"https://t.me/c/2233445566/1024"}
+{"id":"m_1025","ts":"2026-08-04T15:23:22.000Z","canal":"#equipo","autor":"diego","texto":"ok","thread_id":"t_1025","link":"https://t.me/c/2233445566/1025"}
+{"id":"m_1026","ts":"2026-08-04T15:40:46.000Z","canal":"#equipo","autor":"lu","texto":"el de siempre?","thread_id":"t_1025","link":"https://t.me/c/2233445566/1026"}
+{"id":"m_1027","ts":"2026-08-04T19:07:30.000Z","canal":"#equipo","autor":"caro","texto":"alguien tiene el link de la daily?","thread_id":"t_1027","link":"https://t.me/c/2233445566/1027"}
+{"id":"m_1028","ts":"2026-08-04T22:06:25.000Z","canal":"#equipo","autor":"nestor","texto":"sí","thread_id":"t_1028","link":"https://t.me/c/2233445566/1028"}
+{"id":"m_1029","ts":"2026-08-05T11:50:03.000Z","canal":"#equipo","autor":"marta","texto":"buenass","thread_id":"t_1029","link":"https://t.me/c/2233445566/1029"}
+{"id":"m_1030","ts":"2026-08-05T12:14:19.000Z","canal":"#equipo","autor":"nestor","texto":"sí","thread_id":"t_1030","link":"https://t.me/c/2233445566/1030"}
+{"id":"m_1031","ts":"2026-08-05T12:20:08.000Z","canal":"#equipo","autor":"lu","texto":"llego 10 min tarde, tráfico","thread_id":"t_1030","link":"https://t.me/c/2233445566/1031"}
+{"id":"m_1032","ts":"2026-08-05T12:20:58.000Z","canal":"#equipo","autor":"marta","texto":"listo","thread_id":"t_1030","link":"https://t.me/c/2233445566/1032"}
+{"id":"m_1033","ts":"2026-08-05T12:39:29.000Z","canal":"#equipo","autor":"nestor","texto":"buen día","thread_id":"t_1030","link":"https://t.me/c/2233445566/1033"}
+{"id":"m_1034","ts":"2026-08-05T13:10:29.000Z","canal":"#equipo","autor":"diego","texto":"mañana tengo demo con Nuevo Banco a las 9. hay algún ambiente con datos que no sean los de prueba rotos?","thread_id":"t_1034","link":"https://t.me/c/2233445566/1034"}
+{"id":"m_1035","ts":"2026-08-05T13:12:36.000Z","canal":"#equipo","autor":"nestor","texto":"staging está roto desde la semana pasada","thread_id":"t_1034","link":"https://t.me/c/2233445566/1035"}
+{"id":"m_1036","ts":"2026-08-05T15:04:35.000Z","canal":"#equipo","autor":"diego","texto":"ahí voy","thread_id":"t_1036","link":"https://t.me/c/2233445566/1036"}
+{"id":"m_1037","ts":"2026-08-05T15:14:26.000Z","canal":"#equipo","autor":"caro","texto":"el de siempre?","thread_id":"t_1036","link":"https://t.me/c/2233445566/1037"}
+{"id":"m_1038","ts":"2026-08-05T15:21:17.000Z","canal":"#equipo","autor":"jose","texto":"almuerzo?","thread_id":"t_1036","link":"https://t.me/c/2233445566/1038"}
+{"id":"m_1039","ts":"2026-08-05T15:52:25.000Z","canal":"#equipo","autor":"caro","texto":"va","thread_id":"t_1039","link":"https://t.me/c/2233445566/1039"}
+{"id":"m_1040","ts":"2026-08-05T17:45:06.000Z","canal":"#equipo","autor":"lu","texto":"listo","thread_id":"t_1040","link":"https://t.me/c/2233445566/1040"}
+{"id":"m_1041","ts":"2026-08-05T18:02:12.000Z","canal":"#equipo","autor":"jose","texto":"la impresora no anda","thread_id":"t_1040","link":"https://t.me/c/2233445566/1041"}
+{"id":"m_1042","ts":"2026-08-05T19:48:04.000Z","canal":"#equipo","autor":"lu","texto":"listo, ya dejé andando el staging con datos de prueba coherentes para la demo de mañana. usuario demo@nb, clave la de siempre","thread_id":"t_1042","link":"https://t.me/c/2233445566/1042"}
+{"id":"m_1043","ts":"2026-08-05T19:50:35.000Z","canal":"#equipo","autor":"diego","texto":"gracias lu, me salvaste la demo","thread_id":"t_1042","link":"https://t.me/c/2233445566/1043","reply_to":"m_1042"}
+{"id":"m_1044","ts":"2026-08-05T19:54:14.000Z","canal":"#equipo","autor":"caro","texto":"quién tiene la llave del depósito?","thread_id":"t_1042","link":"https://t.me/c/2233445566/1044"}
+{"id":"m_1045","ts":"2026-08-05T21:16:43.000Z","canal":"#equipo","autor":"marta","texto":"listo","thread_id":"t_1045","link":"https://t.me/c/2233445566/1045"}
+{"id":"m_1046","ts":"2026-08-06T11:11:31.000Z","canal":"#equipo","autor":"nestor","texto":"buen día, hoy trabajo desde casa","thread_id":"t_1046","link":"https://t.me/c/2233445566/1046"}
+{"id":"m_1047","ts":"2026-08-06T11:36:44.000Z","canal":"#equipo","autor":"diego","texto":"hola hola","thread_id":"t_1047","link":"https://t.me/c/2233445566/1047"}
+{"id":"m_1048","ts":"2026-08-06T11:51:56.000Z","canal":"#equipo","autor":"diego","texto":"buen día, hoy trabajo desde casa","thread_id":"t_1047","link":"https://t.me/c/2233445566/1048"}
+{"id":"m_1049","ts":"2026-08-06T12:08:35.000Z","canal":"#equipo","autor":"caro","texto":"dale","thread_id":"t_1047","link":"https://t.me/c/2233445566/1049"}
+{"id":"m_1050","ts":"2026-08-06T12:22:18.000Z","canal":"#equipo","autor":"nestor","texto":"puede ser","thread_id":"t_1047","link":"https://t.me/c/2233445566/1050"}
+{"id":"m_1051","ts":"2026-08-06T12:44:13.000Z","canal":"#equipo","autor":"diego","texto":"👍","thread_id":"t_1051","link":"https://t.me/c/2233445566/1051"}
+{"id":"m_1052","ts":"2026-08-06T12:53:12.000Z","canal":"#equipo","autor":"jose","texto":"buenas","thread_id":"t_1051","link":"https://t.me/c/2233445566/1052"}
+{"id":"m_1053","ts":"2026-08-06T15:20:40.000Z","canal":"#equipo","autor":"nestor","texto":"almuerzo?","thread_id":"t_1053","link":"https://t.me/c/2233445566/1053"}
+{"id":"m_1054","ts":"2026-08-06T15:28:57.000Z","canal":"#equipo","autor":"lu","texto":"yo paso hoy","thread_id":"t_1053","link":"https://t.me/c/2233445566/1054"}
+{"id":"m_1055","ts":"2026-08-06T16:44:30.000Z","canal":"#equipo","autor":"marta","texto":"ahí voy","thread_id":"t_1055","link":"https://t.me/c/2233445566/1055"}
+{"id":"m_1056","ts":"2026-08-06T18:03:50.000Z","canal":"#equipo","autor":"lu","texto":"jaja","thread_id":"t_1056","link":"https://t.me/c/2233445566/1056"}
+{"id":"m_1057","ts":"2026-08-06T18:30:04.000Z","canal":"#equipo","autor":"lu","texto":"subí la primera versión del flujo de onboarding, falta el paso de verificación de identidad. pueden probar en staging","thread_id":"t_1057","link":"https://t.me/c/2233445566/1057"}
+{"id":"m_1058","ts":"2026-08-06T18:45:09.000Z","canal":"#equipo","autor":"nestor","texto":"lo vi, el paso 2 tiene el botón muy chico en mobile","thread_id":"t_1057","link":"https://t.me/c/2233445566/1058"}
+{"id":"m_1059","ts":"2026-08-06T18:47:02.000Z","canal":"#equipo","autor":"lu","texto":"cierto, lo cambio","thread_id":"t_1057","link":"https://t.me/c/2233445566/1059"}
+{"id":"m_1060","ts":"2026-08-06T19:22:07.000Z","canal":"#equipo","autor":"marta","texto":"dale","thread_id":"t_1060","link":"https://t.me/c/2233445566/1060"}
+{"id":"m_1061","ts":"2026-08-06T20:22:29.000Z","canal":"#equipo","autor":"nestor","texto":"jaja","thread_id":"t_1061","link":"https://t.me/c/2233445566/1061"}
+{"id":"m_1062","ts":"2026-08-06T21:54:50.000Z","canal":"#equipo","autor":"marta","texto":"alguien vio el cargador de la sala?","thread_id":"t_1062","link":"https://t.me/c/2233445566/1062"}
+{"id":"m_1063","ts":"2026-08-07T11:59:52.000Z","canal":"#equipo","autor":"diego","texto":"hola hola","thread_id":"t_1063","link":"https://t.me/c/2233445566/1063"}
+{"id":"m_1064","ts":"2026-08-07T14:00:57.000Z","canal":"#equipo","autor":"nestor","texto":"subí el diseño nuevo del onboarding a figma, miren cuando puedan","thread_id":"t_1064","link":"https://t.me/c/2233445566/1064"}
+{"id":"m_1065","ts":"2026-08-07T14:30:31.000Z","canal":"#equipo","autor":"marta","texto":"me gusta. el paso 3 lo simplificaría","thread_id":"t_1065","link":"https://t.me/c/2233445566/1065"}
+{"id":"m_1066","ts":"2026-08-07T15:38:34.000Z","canal":"#equipo","autor":"marta","texto":"tereré en la terraza?","thread_id":"t_1066","link":"https://t.me/c/2233445566/1066"}
+{"id":"m_1067","ts":"2026-08-07T15:38:50.000Z","canal":"#equipo","autor":"caro","texto":"tereré en la terraza?","thread_id":"t_1066","link":"https://t.me/c/2233445566/1067"}
+{"id":"m_1068","ts":"2026-08-07T16:12:37.000Z","canal":"#equipo","autor":"lu","texto":"pedimos?","thread_id":"t_1068","link":"https://t.me/c/2233445566/1068"}
+{"id":"m_1069","ts":"2026-08-07T17:58:41.000Z","canal":"#equipo","autor":"jose","texto":"miren esto https://x.com/i/status/1893","thread_id":"t_1069","link":"https://t.me/c/2233445566/1069"}
+{"id":"m_1070","ts":"2026-08-07T19:14:18.000Z","canal":"#equipo","autor":"caro","texto":"alguien vio el cargador de la sala?","thread_id":"t_1070","link":"https://t.me/c/2233445566/1070"}
+{"id":"m_1071","ts":"2026-08-07T21:08:38.000Z","canal":"#equipo","autor":"nestor","texto":"alguien vio el cargador de la sala?","thread_id":"t_1071","link":"https://t.me/c/2233445566/1071"}
+{"id":"m_1072","ts":"2026-08-07T22:01:01.000Z","canal":"#equipo","autor":"caro","texto":"va","thread_id":"t_1072","link":"https://t.me/c/2233445566/1072"}
+{"id":"m_1073","ts":"2026-08-10T11:52:36.000Z","canal":"#equipo","autor":"nestor","texto":"buen día gente","thread_id":"t_1073","link":"https://t.me/c/2233445566/1073"}
+{"id":"m_1074","ts":"2026-08-10T12:16:21.000Z","canal":"#equipo","autor":"marta","texto":"hola hola","thread_id":"t_1074","link":"https://t.me/c/2233445566/1074"}
+{"id":"m_1075","ts":"2026-08-10T13:11:22.000Z","canal":"#equipo","autor":"marta","texto":"quién dejó la puerta abierta","thread_id":"t_1075","link":"https://t.me/c/2233445566/1075"}
+{"id":"m_1076","ts":"2026-08-10T13:14:16.000Z","canal":"#equipo","autor":"caro","texto":"ok","thread_id":"t_1075","link":"https://t.me/c/2233445566/1076"}
+{"id":"m_1077","ts":"2026-08-10T13:15:05.000Z","canal":"#equipo","autor":"jose","texto":"no me anda el build de la extensión desde que actualicé node, tira un error de esbuild que no entiendo","thread_id":"t_1075","link":"https://t.me/c/2233445566/1077"}
+{"id":"m_1078","ts":"2026-08-10T13:22:37.000Z","canal":"#equipo","autor":"lu","texto":"probá borrando node_modules y el lockfile, a mí me pasó lo mismo la semana pasada con la 22","thread_id":"t_1075","link":"https://t.me/c/2233445566/1078"}
+{"id":"m_1079","ts":"2026-08-10T13:31:29.000Z","canal":"#equipo","autor":"jose","texto":"ok","thread_id":"t_1075","link":"https://t.me/c/2233445566/1079"}
+{"id":"m_1080","ts":"2026-08-10T13:41:33.000Z","canal":"#equipo","autor":"jose","texto":"salió, gracias lu. dos horas perdidas por eso","thread_id":"t_1075","link":"https://t.me/c/2233445566/1080","reply_to":"m_1078"}
+{"id":"m_1081","ts":"2026-08-10T13:42:43.000Z","canal":"#equipo","autor":"lu","texto":"tranqui","thread_id":"t_1075","link":"https://t.me/c/2233445566/1081"}
+{"id":"m_1082","ts":"2026-08-10T14:58:30.000Z","canal":"#equipo","autor":"caro","texto":"hoy hay asado en lo de diego, anótense","thread_id":"t_1082","link":"https://t.me/c/2233445566/1082"}
+{"id":"m_1083","ts":"2026-08-10T15:06:54.000Z","canal":"#equipo","autor":"marta","texto":"ok","thread_id":"t_1082","link":"https://t.me/c/2233445566/1083"}
+{"id":"m_1084","ts":"2026-08-10T15:32:50.000Z","canal":"#equipo","autor":"jose","texto":"pedimos?","thread_id":"t_1084","link":"https://t.me/c/2233445566/1084"}
+{"id":"m_1085","ts":"2026-08-10T16:32:09.000Z","canal":"#equipo","autor":"jose","texto":"voy en 10","thread_id":"t_1085","link":"https://t.me/c/2233445566/1085"}
+{"id":"m_1086","ts":"2026-08-10T16:46:47.000Z","canal":"#equipo","autor":"lu","texto":"voy en 10","thread_id":"t_1085","link":"https://t.me/c/2233445566/1086"}
+{"id":"m_1087","ts":"2026-08-10T16:52:07.000Z","canal":"#equipo","autor":"diego","texto":"hoy hay asado en lo de diego, anótense","thread_id":"t_1085","link":"https://t.me/c/2233445566/1087"}
+{"id":"m_1088","ts":"2026-08-10T16:59:40.000Z","canal":"#equipo","autor":"lu","texto":"yo paso hoy","thread_id":"t_1085","link":"https://t.me/c/2233445566/1088"}
+{"id":"m_1089","ts":"2026-08-10T17:28:03.000Z","canal":"#equipo","autor":"marta","texto":"va","thread_id":"t_1089","link":"https://t.me/c/2233445566/1089"}
+{"id":"m_1090","ts":"2026-08-11T11:31:10.000Z","canal":"#equipo","autor":"nestor","texto":"buenass","thread_id":"t_1090","link":"https://t.me/c/2233445566/1090"}
+{"id":"m_1091","ts":"2026-08-11T15:07:50.000Z","canal":"#equipo","autor":"nestor","texto":"tereré en la terraza?","thread_id":"t_1091","link":"https://t.me/c/2233445566/1091"}
+{"id":"m_1092","ts":"2026-08-11T15:20:41.000Z","canal":"#equipo","autor":"nestor","texto":"jajaja","thread_id":"t_1091","link":"https://t.me/c/2233445566/1092"}
+{"id":"m_1093","ts":"2026-08-11T16:33:40.000Z","canal":"#equipo","autor":"diego","texto":"listo","thread_id":"t_1093","link":"https://t.me/c/2233445566/1093"}
+{"id":"m_1094","ts":"2026-08-11T17:36:14.000Z","canal":"#equipo","autor":"lu","texto":"dale","thread_id":"t_1094","link":"https://t.me/c/2233445566/1094"}
+{"id":"m_1095","ts":"2026-08-11T19:03:33.000Z","canal":"#equipo","autor":"marta","texto":"cómo vamos con pagos v2? el viernes tengo reunión con finanzas","thread_id":"t_1095","link":"https://t.me/c/2233445566/1095"}
+{"id":"m_1096","ts":"2026-08-11T19:10:57.000Z","canal":"#equipo","autor":"lu","texto":"armé el comparativo postgres vs dynamo para pagos v2, está en el drive. yo iría por postgres por los reportes","thread_id":"t_1095","link":"https://t.me/c/2233445566/1096"}
+{"id":"m_1097","ts":"2026-08-11T19:15:28.000Z","canal":"#equipo","autor":"marta","texto":"decidimos ir con postgres entonces. lu, mandame el doc","thread_id":"t_1095","link":"https://t.me/c/2233445566/1097","reply_to":"m_1096"}
+{"id":"m_1098","ts":"2026-08-11T19:16:58.000Z","canal":"#equipo","autor":"lu","texto":"va","thread_id":"t_1095","link":"https://t.me/c/2233445566/1098"}
+{"id":"m_1099","ts":"2026-08-11T20:15:55.000Z","canal":"#equipo","autor":"caro","texto":"dale","thread_id":"t_1099","link":"https://t.me/c/2233445566/1099"}
+{"id":"m_1100","ts":"2026-08-11T21:00:50.000Z","canal":"#equipo","autor":"lu","texto":"uf","thread_id":"t_1100","link":"https://t.me/c/2233445566/1100"}
+{"id":"m_1101","ts":"2026-08-12T11:27:21.000Z","canal":"#equipo","autor":"jose","texto":"buenass","thread_id":"t_1101","link":"https://t.me/c/2233445566/1101"}
+{"id":"m_1102","ts":"2026-08-12T12:20:50.000Z","canal":"#equipo","autor":"caro","texto":"un cliente dice que le cobramos dos veces el mismo pedido. es el tercero esta semana","thread_id":"t_1102","link":"https://t.me/c/2233445566/1102"}
+{"id":"m_1103","ts":"2026-08-12T14:23:58.000Z","canal":"#equipo","autor":"caro","texto":"va","thread_id":"t_1103","link":"https://t.me/c/2233445566/1103"}
+{"id":"m_1104","ts":"2026-08-12T15:05:04.000Z","canal":"#equipo","autor":"lu","texto":"lo miré, fue un reintento del webhook de pagos. ya devolví los cobros duplicados y agregué idempotencia para que no pase más","thread_id":"t_1104","link":"https://t.me/c/2233445566/1104"}
+{"id":"m_1105","ts":"2026-08-12T15:08:27.000Z","canal":"#equipo","autor":"caro","texto":"gracias lu, les aviso a los tres","thread_id":"t_1104","link":"https://t.me/c/2233445566/1105","reply_to":"m_1104"}
+{"id":"m_1106","ts":"2026-08-12T15:15:30.000Z","canal":"#equipo","autor":"caro","texto":"yo paso hoy","thread_id":"t_1104","link":"https://t.me/c/2233445566/1106"}
+{"id":"m_1107","ts":"2026-08-12T15:30:50.000Z","canal":"#equipo","autor":"marta","texto":"bien","thread_id":"t_1104","link":"https://t.me/c/2233445566/1107"}
+{"id":"m_1108","ts":"2026-08-12T15:31:24.000Z","canal":"#equipo","autor":"lu","texto":"pedimos?","thread_id":"t_1104","link":"https://t.me/c/2233445566/1108"}
+{"id":"m_1109","ts":"2026-08-12T16:10:46.000Z","canal":"#equipo","autor":"diego","texto":"pedimos?","thread_id":"t_1109","link":"https://t.me/c/2233445566/1109"}
+{"id":"m_1110","ts":"2026-08-12T17:48:04.000Z","canal":"#equipo","autor":"nestor","texto":"ahí voy","thread_id":"t_1110","link":"https://t.me/c/2233445566/1110"}
+{"id":"m_1111","ts":"2026-08-12T18:44:11.000Z","canal":"#equipo","autor":"lu","texto":"mañana feriado? alguien sabe","thread_id":"t_1111","link":"https://t.me/c/2233445566/1111"}
+{"id":"m_1112","ts":"2026-08-12T19:32:55.000Z","canal":"#equipo","autor":"jose","texto":"jaja","thread_id":"t_1112","link":"https://t.me/c/2233445566/1112"}
+{"id":"m_1113","ts":"2026-08-12T19:53:40.000Z","canal":"#equipo","autor":"marta","texto":"el aire está roto otra vez","thread_id":"t_1113","link":"https://t.me/c/2233445566/1113"}
+{"id":"m_1114","ts":"2026-08-12T20:29:40.000Z","canal":"#equipo","autor":"jose","texto":"se cayó el wifi de la oficina?","thread_id":"t_1114","link":"https://t.me/c/2233445566/1114"}
+{"id":"m_1115","ts":"2026-08-13T11:41:21.000Z","canal":"#equipo","autor":"jose","texto":"buenass","thread_id":"t_1115","link":"https://t.me/c/2233445566/1115"}
+{"id":"m_1116","ts":"2026-08-13T11:44:27.000Z","canal":"#equipo","autor":"lu","texto":"buen día gente","thread_id":"t_1115","link":"https://t.me/c/2233445566/1116"}
+{"id":"m_1117","ts":"2026-08-13T12:46:24.000Z","canal":"#equipo","autor":"caro","texto":"reunión en 5","thread_id":"t_1117","link":"https://t.me/c/2233445566/1117"}
+{"id":"m_1118","ts":"2026-08-13T12:47:25.000Z","canal":"#equipo","autor":"nestor","texto":"hola hola","thread_id":"t_1117","link":"https://t.me/c/2233445566/1118"}
+{"id":"m_1119","ts":"2026-08-13T16:07:18.000Z","canal":"#equipo","autor":"jose","texto":"dale","thread_id":"t_1119","link":"https://t.me/c/2233445566/1119"}
+{"id":"m_1120","ts":"2026-08-13T16:14:45.000Z","canal":"#equipo","autor":"lu","texto":"jajaja","thread_id":"t_1119","link":"https://t.me/c/2233445566/1120"}
+{"id":"m_1121","ts":"2026-08-13T16:38:27.000Z","canal":"#equipo","autor":"nestor","texto":"ahí voy","thread_id":"t_1121","link":"https://t.me/c/2233445566/1121"}
+{"id":"m_1122","ts":"2026-08-13T21:33:17.000Z","canal":"#equipo","autor":"caro","texto":"jajaja","thread_id":"t_1122","link":"https://t.me/c/2233445566/1122"}
+{"id":"m_1123","ts":"2026-08-14T11:13:10.000Z","canal":"#equipo","autor":"diego","texto":"buenas","thread_id":"t_1123","link":"https://t.me/c/2233445566/1123"}
+{"id":"m_1124","ts":"2026-08-14T11:22:02.000Z","canal":"#equipo","autor":"marta","texto":"llego 10 min tarde, tráfico","thread_id":"t_1123","link":"https://t.me/c/2233445566/1124"}
+{"id":"m_1125","ts":"2026-08-14T12:18:52.000Z","canal":"#equipo","autor":"nestor","texto":"hola hola","thread_id":"t_1125","link":"https://t.me/c/2233445566/1125"}
+{"id":"m_1126","ts":"2026-08-14T12:38:47.000Z","canal":"#equipo","autor":"caro","texto":"listo","thread_id":"t_1125","link":"https://t.me/c/2233445566/1126"}
+{"id":"m_1127","ts":"2026-08-14T14:32:51.000Z","canal":"#equipo","autor":"nestor","texto":"no sé","thread_id":"t_1127","link":"https://t.me/c/2233445566/1127"}
+{"id":"m_1128","ts":"2026-08-14T16:10:16.000Z","canal":"#equipo","autor":"lu","texto":"alguien tiene el link de la daily?","thread_id":"t_1128","link":"https://t.me/c/2233445566/1128"}
+{"id":"m_1129","ts":"2026-08-14T16:27:24.000Z","canal":"#equipo","autor":"caro","texto":"dale","thread_id":"t_1128","link":"https://t.me/c/2233445566/1129"}
+{"id":"m_1130","ts":"2026-08-14T16:37:29.000Z","canal":"#equipo","autor":"marta","texto":"el de siempre?","thread_id":"t_1128","link":"https://t.me/c/2233445566/1130"}
+{"id":"m_1131","ts":"2026-08-14T16:49:48.000Z","canal":"#equipo","autor":"nestor","texto":"jaja","thread_id":"t_1128","link":"https://t.me/c/2233445566/1131"}
+{"id":"m_1132","ts":"2026-08-14T18:13:38.000Z","canal":"#equipo","autor":"nestor","texto":"miren esto https://x.com/i/status/1893","thread_id":"t_1132","link":"https://t.me/c/2233445566/1132"}
+{"id":"m_1133","ts":"2026-08-14T19:52:34.000Z","canal":"#equipo","autor":"nestor","texto":"feliz cumple caro! 🎂","thread_id":"t_1133","link":"https://t.me/c/2233445566/1133"}
+{"id":"m_1134","ts":"2026-08-14T20:00:12.000Z","canal":"#equipo","autor":"marta","texto":"quién puede cubrir el on-call del finde?","thread_id":"t_1133","link":"https://t.me/c/2233445566/1134"}
+{"id":"m_1135","ts":"2026-08-14T20:05:29.000Z","canal":"#equipo","autor":"lu","texto":"yo lo tomo","thread_id":"t_1133","link":"https://t.me/c/2233445566/1135"}
+{"id":"m_1136","ts":"2026-08-14T20:06:00.000Z","canal":"#equipo","autor":"marta","texto":"gracias","thread_id":"t_1133","link":"https://t.me/c/2233445566/1136"}
+{"id":"m_1137","ts":"2026-08-14T21:37:16.000Z","canal":"#equipo","autor":"diego","texto":"uf","thread_id":"t_1137","link":"https://t.me/c/2233445566/1137"}
+{"id":"m_1138","ts":"2026-08-14T22:11:53.000Z","canal":"#equipo","autor":"nestor","texto":"listo","thread_id":"t_1138","link":"https://t.me/c/2233445566/1138"}
+{"id":"m_1139","ts":"2026-08-14T22:29:16.000Z","canal":"#equipo","autor":"jose","texto":"jaja","thread_id":"t_1138","link":"https://t.me/c/2233445566/1139"}
+{"id":"m_1140","ts":"2026-08-17T11:39:10.000Z","canal":"#equipo","autor":"jose","texto":"llego 10 min tarde, tráfico","thread_id":"t_1140","link":"https://t.me/c/2233445566/1140"}
+{"id":"m_1141","ts":"2026-08-17T11:45:26.000Z","canal":"#equipo","autor":"lu","texto":"el finde saltaron 2 alertas, las dos falsas por el disco lleno del server de logs. agregué rotación de logs, no va a pasar más","thread_id":"t_1140","link":"https://t.me/c/2233445566/1141"}
+{"id":"m_1142","ts":"2026-08-17T11:50:29.000Z","canal":"#equipo","autor":"nestor","texto":"uf, gracias lu. yo el finde pasado lo apagué y prendí nomás","thread_id":"t_1140","link":"https://t.me/c/2233445566/1142","reply_to":"m_1141"}
+{"id":"m_1143","ts":"2026-08-17T12:40:47.000Z","canal":"#equipo","autor":"lu","texto":"hola hola","thread_id":"t_1143","link":"https://t.me/c/2233445566/1143"}
+{"id":"m_1144","ts":"2026-08-17T14:03:23.000Z","canal":"#equipo","autor":"lu","texto":"mm","thread_id":"t_1144","link":"https://t.me/c/2233445566/1144"}
+{"id":"m_1145","ts":"2026-08-17T15:05:33.000Z","canal":"#equipo","autor":"diego","texto":"ahí voy","thread_id":"t_1145","link":"https://t.me/c/2233445566/1145"}
+{"id":"m_1146","ts":"2026-08-17T15:24:47.000Z","canal":"#equipo","autor":"diego","texto":"pedimos?","thread_id":"t_1145","link":"https://t.me/c/2233445566/1146"}
+{"id":"m_1147","ts":"2026-08-17T16:41:29.000Z","canal":"#equipo","autor":"jose","texto":"yo paso hoy","thread_id":"t_1147","link":"https://t.me/c/2233445566/1147"}
+{"id":"m_1148","ts":"2026-08-18T12:30:18.000Z","canal":"#equipo","autor":"diego","texto":"los de Tigo están enojados por el retraso del reporte mensual, escribieron 3 veces","thread_id":"t_1148","link":"https://t.me/c/2233445566/1148"}
+{"id":"m_1149","ts":"2026-08-18T12:31:47.000Z","canal":"#equipo","autor":"marta","texto":"alguien que los llame hoy","thread_id":"t_1148","link":"https://t.me/c/2233445566/1149"}
+{"id":"m_1150","ts":"2026-08-18T12:47:21.000Z","canal":"#equipo","autor":"lu","texto":"buen día gente","thread_id":"t_1148","link":"https://t.me/c/2233445566/1150"}
+{"id":"m_1151","ts":"2026-08-18T14:05:32.000Z","canal":"#equipo","autor":"lu","texto":"hablé con los de Tigo, les expliqué que el retraso es por la migración y quedaron tranquilos hasta el jueves. les prometí el reporte parcial mañana","thread_id":"t_1151","link":"https://t.me/c/2233445566/1151"}
+{"id":"m_1152","ts":"2026-08-18T14:07:53.000Z","canal":"#equipo","autor":"diego","texto":"gracias lu, me sacaste un peso","thread_id":"t_1151","link":"https://t.me/c/2233445566/1152","reply_to":"m_1151"}
+{"id":"m_1153","ts":"2026-08-18T14:08:32.000Z","canal":"#equipo","autor":"marta","texto":"gracias","thread_id":"t_1151","link":"https://t.me/c/2233445566/1153"}
+{"id":"m_1154","ts":"2026-08-18T14:21:37.000Z","canal":"#equipo","autor":"caro","texto":"el café se terminó","thread_id":"t_1151","link":"https://t.me/c/2233445566/1154"}
+{"id":"m_1155","ts":"2026-08-18T15:02:33.000Z","canal":"#equipo","autor":"diego","texto":"yo paso hoy","thread_id":"t_1155","link":"https://t.me/c/2233445566/1155"}
+{"id":"m_1156","ts":"2026-08-18T15:26:57.000Z","canal":"#equipo","autor":"lu","texto":"tereré en la terraza?","thread_id":"t_1156","link":"https://t.me/c/2233445566/1156"}
+{"id":"m_1157","ts":"2026-08-18T15:27:20.000Z","canal":"#equipo","autor":"diego","texto":"pedimos?","thread_id":"t_1156","link":"https://t.me/c/2233445566/1157"}
+{"id":"m_1158","ts":"2026-08-18T16:25:36.000Z","canal":"#equipo","autor":"nestor","texto":"alguien tiene el link de la daily?","thread_id":"t_1158","link":"https://t.me/c/2233445566/1158"}
+{"id":"m_1159","ts":"2026-08-18T16:54:24.000Z","canal":"#equipo","autor":"diego","texto":"ok","thread_id":"t_1159","link":"https://t.me/c/2233445566/1159"}
+{"id":"m_1160","ts":"2026-08-18T18:09:31.000Z","canal":"#equipo","autor":"marta","texto":"quién dejó la puerta abierta","thread_id":"t_1160","link":"https://t.me/c/2233445566/1160"}
+{"id":"m_1161","ts":"2026-08-18T22:05:48.000Z","canal":"#equipo","autor":"lu","texto":"quién dejó la puerta abierta","thread_id":"t_1161","link":"https://t.me/c/2233445566/1161"}
+{"id":"m_1162","ts":"2026-08-19T12:13:56.000Z","canal":"#equipo","autor":"caro","texto":"llego 10 min tarde, tráfico","thread_id":"t_1162","link":"https://t.me/c/2233445566/1162"}
+{"id":"m_1163","ts":"2026-08-19T12:34:48.000Z","canal":"#equipo","autor":"marta","texto":"jajaja","thread_id":"t_1163","link":"https://t.me/c/2233445566/1163"}
+{"id":"m_1164","ts":"2026-08-19T12:35:09.000Z","canal":"#equipo","autor":"caro","texto":"quién dejó la puerta abierta","thread_id":"t_1163","link":"https://t.me/c/2233445566/1164"}
+{"id":"m_1165","ts":"2026-08-19T12:39:41.000Z","canal":"#equipo","autor":"marta","texto":"hola hola","thread_id":"t_1163","link":"https://t.me/c/2233445566/1165"}
+{"id":"m_1166","ts":"2026-08-19T15:51:25.000Z","canal":"#equipo","autor":"marta","texto":"mañana feriado? alguien sabe","thread_id":"t_1166","link":"https://t.me/c/2233445566/1166"}
+{"id":"m_1167","ts":"2026-08-19T16:00:56.000Z","canal":"#equipo","autor":"marta","texto":"pedimos?","thread_id":"t_1166","link":"https://t.me/c/2233445566/1167"}
+{"id":"m_1168","ts":"2026-08-19T16:11:23.000Z","canal":"#equipo","autor":"lu","texto":"yo paso hoy","thread_id":"t_1166","link":"https://t.me/c/2233445566/1168"}
+{"id":"m_1169","ts":"2026-08-19T16:29:48.000Z","canal":"#equipo","autor":"jose","texto":"hay empanadas en la cocina","thread_id":"t_1166","link":"https://t.me/c/2233445566/1169"}
+{"id":"m_1170","ts":"2026-08-19T16:37:54.000Z","canal":"#equipo","autor":"nestor","texto":"yo paso hoy","thread_id":"t_1166","link":"https://t.me/c/2233445566/1170"}
+{"id":"m_1171","ts":"2026-08-19T17:00:05.000Z","canal":"#equipo","autor":"nestor","texto":"alguien sabe por qué el pipeline de CI tarda 40 minutos? no puedo mergear nada","thread_id":"t_1171","link":"https://t.me/c/2233445566/1171"}
+{"id":"m_1172","ts":"2026-08-19T17:40:59.000Z","canal":"#equipo","autor":"caro","texto":"👍","thread_id":"t_1172","link":"https://t.me/c/2233445566/1172"}
+{"id":"m_1173","ts":"2026-08-19T17:41:18.000Z","canal":"#equipo","autor":"caro","texto":"uf","thread_id":"t_1172","link":"https://t.me/c/2233445566/1173"}
+{"id":"m_1174","ts":"2026-08-19T20:20:57.000Z","canal":"#equipo","autor":"lu","texto":"era el paso de tests e2e que corría serial. lo paralelicé en 4 workers, ahora tarda 12 minutos","thread_id":"t_1174","link":"https://t.me/c/2233445566/1174"}
+{"id":"m_1175","ts":"2026-08-19T20:25:28.000Z","canal":"#equipo","autor":"nestor","texto":"gracias lu, eso nos cambia el día a todos","thread_id":"t_1174","link":"https://t.me/c/2233445566/1175","reply_to":"m_1174"}
+{"id":"m_1176","ts":"2026-08-19T20:26:19.000Z","canal":"#equipo","autor":"jose","texto":"🙌","thread_id":"t_1174","link":"https://t.me/c/2233445566/1176"}
+{"id":"m_1177","ts":"2026-08-19T21:31:31.000Z","canal":"#equipo","autor":"diego","texto":"no sé","thread_id":"t_1177","link":"https://t.me/c/2233445566/1177"}
+{"id":"m_1178","ts":"2026-08-19T22:39:47.000Z","canal":"#equipo","autor":"marta","texto":"buenísimo","thread_id":"t_1178","link":"https://t.me/c/2233445566/1178"}
+{"id":"m_1179","ts":"2026-08-20T12:14:31.000Z","canal":"#equipo","autor":"jose","texto":"buenass","thread_id":"t_1179","link":"https://t.me/c/2233445566/1179"}
+{"id":"m_1180","ts":"2026-08-20T12:26:10.000Z","canal":"#equipo","autor":"lu","texto":"buen día","thread_id":"t_1179","link":"https://t.me/c/2233445566/1180"}
+{"id":"m_1181","ts":"2026-08-20T13:00:18.000Z","canal":"#equipo","autor":"jose","texto":"arreglé el bug del scroll en mobile, estaba desde junio","thread_id":"t_1181","link":"https://t.me/c/2233445566/1181"}
+{"id":"m_1182","ts":"2026-08-20T13:05:33.000Z","canal":"#equipo","autor":"nestor","texto":"al fin","thread_id":"t_1181","link":"https://t.me/c/2233445566/1182"}
+{"id":"m_1183","ts":"2026-08-20T14:32:23.000Z","canal":"#equipo","autor":"caro","texto":"hoy hay asado en lo de diego, anótense","thread_id":"t_1183","link":"https://t.me/c/2233445566/1183"}
+{"id":"m_1184","ts":"2026-08-20T14:43:09.000Z","canal":"#equipo","autor":"nestor","texto":"va","thread_id":"t_1183","link":"https://t.me/c/2233445566/1184"}
+{"id":"m_1185","ts":"2026-08-20T15:06:24.000Z","canal":"#equipo","autor":"caro","texto":"😂","thread_id":"t_1185","link":"https://t.me/c/2233445566/1185"}
+{"id":"m_1186","ts":"2026-08-20T15:19:03.000Z","canal":"#equipo","autor":"caro","texto":"tereré en la terraza?","thread_id":"t_1185","link":"https://t.me/c/2233445566/1186"}
+{"id":"m_1187","ts":"2026-08-20T15:39:13.000Z","canal":"#equipo","autor":"marta","texto":"quién tiene la llave del depósito?","thread_id":"t_1187","link":"https://t.me/c/2233445566/1187"}
+{"id":"m_1188","ts":"2026-08-20T16:47:37.000Z","canal":"#equipo","autor":"marta","texto":"hay empanadas en la cocina","thread_id":"t_1188","link":"https://t.me/c/2233445566/1188"}
+{"id":"m_1189","ts":"2026-08-20T16:49:44.000Z","canal":"#equipo","autor":"jose","texto":"pedimos?","thread_id":"t_1188","link":"https://t.me/c/2233445566/1189"}
+{"id":"m_1190","ts":"2026-08-20T16:52:37.000Z","canal":"#equipo","autor":"jose","texto":"😂","thread_id":"t_1188","link":"https://t.me/c/2233445566/1190"}
+{"id":"m_1191","ts":"2026-08-20T19:13:18.000Z","canal":"#equipo","autor":"marta","texto":"sí","thread_id":"t_1191","link":"https://t.me/c/2233445566/1191"}
+{"id":"m_1192","ts":"2026-08-20T19:59:47.000Z","canal":"#equipo","autor":"lu","texto":"dale","thread_id":"t_1192","link":"https://t.me/c/2233445566/1192"}
+{"id":"m_1193","ts":"2026-08-21T12:16:23.000Z","canal":"#equipo","autor":"nestor","texto":"buenas","thread_id":"t_1193","link":"https://t.me/c/2233445566/1193"}
+{"id":"m_1194","ts":"2026-08-21T12:30:12.000Z","canal":"#equipo","autor":"nestor","texto":"😂","thread_id":"t_1193","link":"https://t.me/c/2233445566/1194"}
+{"id":"m_1195","ts":"2026-08-21T13:24:34.000Z","canal":"#equipo","autor":"marta","texto":"va","thread_id":"t_1195","link":"https://t.me/c/2233445566/1195"}
+{"id":"m_1196","ts":"2026-08-21T14:45:38.000Z","canal":"#equipo","autor":"marta","texto":"uf","thread_id":"t_1196","link":"https://t.me/c/2233445566/1196"}
+{"id":"m_1197","ts":"2026-08-21T15:36:59.000Z","canal":"#equipo","autor":"caro","texto":"pedimos?","thread_id":"t_1197","link":"https://t.me/c/2233445566/1197"}
+{"id":"m_1198","ts":"2026-08-21T16:45:34.000Z","canal":"#equipo","autor":"caro","texto":"yo paso hoy","thread_id":"t_1198","link":"https://t.me/c/2233445566/1198"}
+{"id":"m_1199","ts":"2026-08-21T18:00:28.000Z","canal":"#equipo","autor":"marta","texto":"pagos v2, cómo vamos","thread_id":"t_1199","link":"https://t.me/c/2233445566/1199"}
+{"id":"m_1200","ts":"2026-08-21T18:10:10.000Z","canal":"#equipo","autor":"lu","texto":"la migración de la tabla de transacciones ya está en staging, faltan los reportes. calculo dos semanas","thread_id":"t_1199","link":"https://t.me/c/2233445566/1200"}
+{"id":"m_1201","ts":"2026-08-21T18:12:43.000Z","canal":"#equipo","autor":"marta","texto":"ok","thread_id":"t_1199","link":"https://t.me/c/2233445566/1201"}
+{"id":"m_1202","ts":"2026-08-21T20:47:08.000Z","canal":"#equipo","autor":"nestor","texto":"jaja","thread_id":"t_1202","link":"https://t.me/c/2233445566/1202"}
+{"id":"m_1203","ts":"2026-08-24T12:24:02.000Z","canal":"#equipo","autor":"caro","texto":"buenas","thread_id":"t_1203","link":"https://t.me/c/2233445566/1203"}
+{"id":"m_1204","ts":"2026-08-24T14:00:25.000Z","canal":"#equipo","autor":"diego","texto":"Nuevo Banco pregunta si pueden exportar a excel. lo necesitan para el cierre","thread_id":"t_1204","link":"https://t.me/c/2233445566/1204"}
+{"id":"m_1205","ts":"2026-08-24T14:19:14.000Z","canal":"#equipo","autor":"marta","texto":"reunión en 5","thread_id":"t_1204","link":"https://t.me/c/2233445566/1205"}
+{"id":"m_1206","ts":"2026-08-24T14:57:11.000Z","canal":"#equipo","autor":"marta","texto":"uf","thread_id":"t_1206","link":"https://t.me/c/2233445566/1206"}
+{"id":"m_1207","ts":"2026-08-24T15:31:27.000Z","canal":"#equipo","autor":"lu","texto":"quién tiene la llave del depósito?","thread_id":"t_1207","link":"https://t.me/c/2233445566/1207"}
+{"id":"m_1208","ts":"2026-08-24T19:00:21.000Z","canal":"#equipo","autor":"nestor","texto":"dale","thread_id":"t_1208","link":"https://t.me/c/2233445566/1208"}
+{"id":"m_1209","ts":"2026-08-24T19:30:02.000Z","canal":"#equipo","autor":"lu","texto":"hablé con ellos, les expliqué que el export sale en septiembre con pagos v2 y quedaron conformes. no hace falta hacer nada ahora","thread_id":"t_1209","link":"https://t.me/c/2233445566/1209"}
+{"id":"m_1210","ts":"2026-08-24T19:35:48.000Z","canal":"#equipo","autor":"diego","texto":"perfecto, gracias","thread_id":"t_1209","link":"https://t.me/c/2233445566/1210"}
+{"id":"m_1211","ts":"2026-08-24T20:39:03.000Z","canal":"#equipo","autor":"marta","texto":"jajaja","thread_id":"t_1211","link":"https://t.me/c/2233445566/1211"}
+{"id":"m_1212","ts":"2026-08-24T21:09:01.000Z","canal":"#equipo","autor":"lu","texto":"uf","thread_id":"t_1212","link":"https://t.me/c/2233445566/1212"}
+{"id":"m_1213","ts":"2026-08-25T11:42:50.000Z","canal":"#equipo","autor":"lu","texto":"llego 10 min tarde, tráfico","thread_id":"t_1213","link":"https://t.me/c/2233445566/1213"}
+{"id":"m_1214","ts":"2026-08-25T12:26:33.000Z","canal":"#equipo","autor":"lu","texto":"mañana feriado? alguien sabe","thread_id":"t_1214","link":"https://t.me/c/2233445566/1214"}
+{"id":"m_1215","ts":"2026-08-25T13:59:50.000Z","canal":"#equipo","autor":"lu","texto":"jaja","thread_id":"t_1215","link":"https://t.me/c/2233445566/1215"}
+{"id":"m_1216","ts":"2026-08-25T15:03:08.000Z","canal":"#equipo","autor":"marta","texto":"alguien tiene el link de la daily?","thread_id":"t_1216","link":"https://t.me/c/2233445566/1216"}
+{"id":"m_1217","ts":"2026-08-25T15:26:57.000Z","canal":"#equipo","autor":"jose","texto":"yo paso hoy","thread_id":"t_1217","link":"https://t.me/c/2233445566/1217"}
+{"id":"m_1218","ts":"2026-08-25T15:26:04.000Z","canal":"#equipo","autor":"nestor","texto":"pedimos?","thread_id":"t_1217","link":"https://t.me/c/2233445566/1218"}
+{"id":"m_1219","ts":"2026-08-25T15:29:38.000Z","canal":"#equipo","autor":"lu","texto":"tereré en la terraza?","thread_id":"t_1217","link":"https://t.me/c/2233445566/1219"}
+{"id":"m_1220","ts":"2026-08-25T15:40:51.000Z","canal":"#equipo","autor":"nestor","texto":"feliz cumple caro! 🎂","thread_id":"t_1217","link":"https://t.me/c/2233445566/1220"}
+{"id":"m_1221","ts":"2026-08-25T15:51:41.000Z","canal":"#equipo","autor":"lu","texto":"va","thread_id":"t_1217","link":"https://t.me/c/2233445566/1221"}
+{"id":"m_1222","ts":"2026-08-25T16:46:04.000Z","canal":"#equipo","autor":"jose","texto":"buenísimo","thread_id":"t_1222","link":"https://t.me/c/2233445566/1222"}
+{"id":"m_1223","ts":"2026-08-25T17:17:43.000Z","canal":"#equipo","autor":"jose","texto":"ahí voy","thread_id":"t_1223","link":"https://t.me/c/2233445566/1223"}
+{"id":"m_1224","ts":"2026-08-25T18:33:17.000Z","canal":"#equipo","autor":"caro","texto":"uf","thread_id":"t_1224","link":"https://t.me/c/2233445566/1224"}
+{"id":"m_1225","ts":"2026-08-25T20:45:11.000Z","canal":"#equipo","autor":"marta","texto":"se cayó el cron de facturación, hay 40 facturas sin emitir y mañana es el vencimiento","thread_id":"t_1225","link":"https://t.me/c/2233445566/1225"}
+{"id":"m_1226","ts":"2026-08-25T21:02:34.000Z","canal":"#equipo","autor":"lu","texto":"lo tomo yo","thread_id":"t_1225","link":"https://t.me/c/2233445566/1226"}
+{"id":"m_1227","ts":"2026-08-26T00:38:30.000Z","canal":"#equipo","autor":"lu","texto":"arreglé el cron de facturación, era la zona horaria después del cambio de servidor. corrí las 40 a mano, ya están emitidas","thread_id":"t_1227","link":"https://t.me/c/2233445566/1227"}
+{"id":"m_1228","ts":"2026-08-26T00:45:50.000Z","canal":"#equipo","autor":"marta","texto":"gracias lu, mañana hablamos","thread_id":"t_1227","link":"https://t.me/c/2233445566/1228","reply_to":"m_1227"}
+{"id":"m_1229","ts":"2026-08-26T12:26:50.000Z","canal":"#equipo","autor":"caro","texto":"el café se terminó","thread_id":"t_1229","link":"https://t.me/c/2233445566/1229"}
+{"id":"m_1230","ts":"2026-08-26T12:41:36.000Z","canal":"#equipo","autor":"nestor","texto":"buenass","thread_id":"t_1229","link":"https://t.me/c/2233445566/1230"}
+{"id":"m_1231","ts":"2026-08-26T12:48:39.000Z","canal":"#equipo","autor":"jose","texto":"quién tiene la llave del depósito?","thread_id":"t_1229","link":"https://t.me/c/2233445566/1231"}
+{"id":"m_1232","ts":"2026-08-26T13:00:19.000Z","canal":"#equipo","autor":"jose","texto":"alguien me da una mano con el deploy de la extensión? nunca lo hice y me da miedo romper algo","thread_id":"t_1229","link":"https://t.me/c/2233445566/1232"}
+{"id":"m_1233","ts":"2026-08-26T13:10:22.000Z","canal":"#equipo","autor":"lu","texto":"te paso el runbook y lo hacemos juntos a las 3","thread_id":"t_1229","link":"https://t.me/c/2233445566/1233"}
+{"id":"m_1234","ts":"2026-08-26T15:36:32.000Z","canal":"#equipo","autor":"lu","texto":"voy en 10","thread_id":"t_1234","link":"https://t.me/c/2233445566/1234"}
+{"id":"m_1235","ts":"2026-08-26T15:56:05.000Z","canal":"#equipo","autor":"nestor","texto":"ahí voy","thread_id":"t_1234","link":"https://t.me/c/2233445566/1235"}
+{"id":"m_1236","ts":"2026-08-26T15:56:31.000Z","canal":"#equipo","autor":"caro","texto":"mm","thread_id":"t_1234","link":"https://t.me/c/2233445566/1236"}
+{"id":"m_1237","ts":"2026-08-26T16:35:40.000Z","canal":"#equipo","autor":"caro","texto":"voy en 10","thread_id":"t_1237","link":"https://t.me/c/2233445566/1237"}
+{"id":"m_1238","ts":"2026-08-26T18:24:39.000Z","canal":"#equipo","autor":"diego","texto":"dale","thread_id":"t_1238","link":"https://t.me/c/2233445566/1238"}
+{"id":"m_1239","ts":"2026-08-26T19:20:16.000Z","canal":"#equipo","autor":"jose","texto":"listo, deployada. gracias lu por la paciencia","thread_id":"t_1229","link":"https://t.me/c/2233445566/1239","reply_to":"m_1233"}
+{"id":"m_1240","ts":"2026-08-26T21:20:38.000Z","canal":"#equipo","autor":"nestor","texto":"meme del día 😂","thread_id":"t_1240","link":"https://t.me/c/2233445566/1240"}
+{"id":"m_1241","ts":"2026-08-26T22:31:56.000Z","canal":"#equipo","autor":"nestor","texto":"ok","thread_id":"t_1241","link":"https://t.me/c/2233445566/1241"}
+{"id":"m_1242","ts":"2026-08-27T15:47:59.000Z","canal":"#equipo","autor":"marta","texto":"buenísimo","thread_id":"t_1242","link":"https://t.me/c/2233445566/1242"}
+{"id":"m_1243","ts":"2026-08-27T16:23:41.000Z","canal":"#equipo","autor":"marta","texto":"voy en 10","thread_id":"t_1243","link":"https://t.me/c/2233445566/1243"}
+{"id":"m_1244","ts":"2026-08-27T17:00:43.000Z","canal":"#equipo","autor":"marta","texto":"el onboarding nuevo queda para septiembre, no llegamos","thread_id":"t_1244","link":"https://t.me/c/2233445566/1244"}
+{"id":"m_1245","ts":"2026-08-27T17:02:30.000Z","canal":"#equipo","autor":"lu","texto":"ok","thread_id":"t_1244","link":"https://t.me/c/2233445566/1245"}
+{"id":"m_1246","ts":"2026-08-27T17:03:23.000Z","canal":"#equipo","autor":"nestor","texto":"una pena, estaba casi","thread_id":"t_1244","link":"https://t.me/c/2233445566/1246"}
+{"id":"m_1247","ts":"2026-08-27T17:22:06.000Z","canal":"#equipo","autor":"diego","texto":"mañana feriado? alguien sabe","thread_id":"t_1244","link":"https://t.me/c/2233445566/1247"}
+{"id":"m_1248","ts":"2026-08-27T17:24:35.000Z","canal":"#equipo","autor":"lu","texto":"mañana feriado? alguien sabe","thread_id":"t_1244","link":"https://t.me/c/2233445566/1248"}
+{"id":"m_1249","ts":"2026-08-27T18:40:28.000Z","canal":"#equipo","autor":"jose","texto":"quién dejó la puerta abierta","thread_id":"t_1249","link":"https://t.me/c/2233445566/1249"}
+{"id":"m_1250","ts":"2026-08-27T19:52:46.000Z","canal":"#equipo","autor":"diego","texto":"sí","thread_id":"t_1250","link":"https://t.me/c/2233445566/1250"}
+{"id":"m_1251","ts":"2026-08-28T11:25:20.000Z","canal":"#equipo","autor":"nestor","texto":"buen día","thread_id":"t_1251","link":"https://t.me/c/2233445566/1251"}
+{"id":"m_1252","ts":"2026-08-28T12:48:09.000Z","canal":"#equipo","autor":"nestor","texto":"va","thread_id":"t_1252","link":"https://t.me/c/2233445566/1252"}
+{"id":"m_1253","ts":"2026-08-28T12:55:15.000Z","canal":"#equipo","autor":"marta","texto":"buen día, hoy trabajo desde casa","thread_id":"t_1252","link":"https://t.me/c/2233445566/1253"}
+{"id":"m_1254","ts":"2026-08-28T15:02:13.000Z","canal":"#equipo","autor":"diego","texto":"alguien tiene el link de la daily?","thread_id":"t_1254","link":"https://t.me/c/2233445566/1254"}
+{"id":"m_1255","ts":"2026-08-28T15:48:02.000Z","canal":"#equipo","autor":"nestor","texto":"yo paso hoy","thread_id":"t_1255","link":"https://t.me/c/2233445566/1255"}
+{"id":"m_1256","ts":"2026-08-28T18:42:19.000Z","canal":"#equipo","autor":"marta","texto":"se cayó el wifi de la oficina?","thread_id":"t_1256","link":"https://t.me/c/2233445566/1256"}
+{"id":"m_1257","ts":"2026-08-28T19:30:11.000Z","canal":"#equipo","autor":"lu","texto":"mañana tengo el 1:1 con marta, si alguien necesita algo de mí que sea hoy","thread_id":"t_1257","link":"https://t.me/c/2233445566/1257"}
+{"id":"m_1258","ts":"2026-08-28T19:31:57.000Z","canal":"#equipo","autor":"nestor","texto":"todo bien acá","thread_id":"t_1257","link":"https://t.me/c/2233445566/1258"}
+{"id":"m_1259","ts":"2026-08-28T19:32:44.000Z","canal":"#equipo","autor":"caro","texto":"nada, gracias","thread_id":"t_1257","link":"https://t.me/c/2233445566/1259"}
+{"id":"m_1260","ts":"2026-08-28T20:38:06.000Z","canal":"#equipo","autor":"lu","texto":"va","thread_id":"t_1260","link":"https://t.me/c/2233445566/1260"}
+{"id":"m_1261","ts":"2026-08-28T21:35:41.000Z","canal":"#equipo","autor":"nestor","texto":"meme del día 😂","thread_id":"t_1261","link":"https://t.me/c/2233445566/1261"}
+{"id":"m_1262","ts":"2026-08-28T21:39:10.000Z","canal":"#equipo","autor":"caro","texto":"uf","thread_id":"t_1261","link":"https://t.me/c/2233445566/1262"}
