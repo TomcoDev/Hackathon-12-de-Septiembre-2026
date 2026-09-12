@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EL TESTIGO</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d11'/%3E%3Cpath d='M4 16s4.5-7 12-7 12 7 12 7-4.5 7-12 7-12-7-12-7z' fill='none' stroke='%236fd39a' stroke-width='2.2'/%3E%3Ccircle cx='16' cy='16' r='3.4' fill='%236fd39a'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    --bg:#0b0d11; --panel:#12151b; --panel2:#171b23; --line:#232935; --txt:#e8eaf0; --dim:#8a93a6; --mute:#4f5768;
+    --ok:#6fd39a; --okbg:#12261c; --warn:#f2b45c; --warnbg:#2a2113; --priv:#8ab4ff; --privbg:#121a2b; --bad:#ef7b7b;
+  }
+  * { box-sizing:border-box }
+  html, body { height:100% }
+  body { margin:0; background:var(--bg); color:var(--txt); font:14.5px/1.5 -apple-system, "Segoe UI", system-ui, sans-serif; display:flex; flex-direction:column }
+  a { color:var(--ok) }
+  button { background:#1d2230; color:var(--txt); border:1px solid var(--line); border-radius:7px; padding:7px 13px; cursor:pointer; font-size:13.5px; font-family:inherit }
+  button:hover { border-color:#3d475a } button.primary { background:var(--ok); color:#07130c; border-color:var(--ok); font-weight:700 }
+  button.mini { padding:2px 8px; font-size:12px } button.on { background:#2a3140; border-color:#4a556c }
+  select { background:#1d2230; color:var(--txt); border:1px solid var(--line); border-radius:7px; padding:6px 8px; font-size:13px }
+  button:focus-visible, select:focus-visible, summary:focus-visible { outline:2px solid var(--priv); outline-offset:2px }
+  @media (prefers-reduced-motion: reduce) { * { animation:none !important; transition:none !important } }
+
+  /* ---------- header ---------- */
+  header { display:flex; align-items:center; gap:22px; padding:12px 24px; background:var(--panel); border-bottom:1px solid var(--line); flex-wrap:wrap }
+  .brand h1 { margin:0; font-size:15px; letter-spacing:3px; font-weight:800 }
+  .brand p { margin:2px 0 0; color:var(--dim); font-size:12.5px }
+  .controles { display:flex; gap:8px; align-items:center }
+  .contador { display:flex; gap:28px; margin-left:auto; font-variant-numeric:tabular-nums }
+  .contador > div { text-align:right; min-width:86px }
+  .contador b { display:block; font-size:34px; line-height:1; font-weight:800; letter-spacing:-1px }
+  .contador span { color:var(--dim); font-size:12px; text-transform:uppercase; letter-spacing:1.2px }
+  .contador .anoto b { color:var(--ok) } .contador .hablo b { color:var(--warn) }
+  .progreso { height:3px; background:var(--line) } .progreso div { height:100%; width:0; background:var(--ok); transition:width .15s linear }
+
+  /* ---------- narración ---------- */
+  .estado { padding:10px 24px; background:var(--panel2); border-bottom:1px solid var(--line); display:flex; gap:14px; align-items:baseline; min-height:46px }
+  .estado .punto { width:9px; height:9px; border-radius:50%; background:var(--mute); flex:none; margin-top:6px }
+  .estado.leyendo .punto { background:var(--ok); box-shadow:0 0 0 0 var(--ok); animation:latido 1.4s infinite }
+  .estado.hablo .punto { background:var(--warn) }
+  @keyframes latido { 0%{box-shadow:0 0 0 0 rgba(111,211,154,.6)} 70%{box-shadow:0 0 0 9px rgba(111,211,154,0)} 100%{box-shadow:0 0 0 0 rgba(111,211,154,0)} }
+  .estado b { font-size:17px } .estado span { color:var(--dim) }
+  .estado.hablo { background:var(--warnbg); border-bottom-color:#4a3a1a }
+  .estado.hablo b { color:var(--warn) }
+  .estado code { background:#1d2230; border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:12.5px }
+
+  /* ---------- columnas ---------- */
+  main { flex:1; display:grid; grid-template-columns:1.05fr 1fr 1fr; min-height:0 }
+  section { overflow-y:auto; padding:16px 20px; border-right:1px solid var(--line); min-height:0 }
+  section:last-child { border-right:0 }
+  h2 { font-size:11px; text-transform:uppercase; letter-spacing:1.4px; color:var(--dim); margin:0 0 4px; font-weight:700 }
+  h2 + .sub { color:var(--mute); font-size:12px; margin:0 0 14px }
+  .ic { width:14px; height:14px; vertical-align:-2px; flex:none; fill:currentColor }
+  button .ic { vertical-align:-3px; margin-right:5px }
+
+  /* ---------- grupo ---------- */
+  .msg { display:flex; gap:10px; padding:5px 8px 5px 10px; margin:0 -8px 3px; border-left:3px solid transparent; border-radius:0 8px 8px 0 }
+  .msg .quien { font-weight:700; min-width:58px; font-size:13px }
+  .msg .texto { flex:1 } .msg .hora { color:var(--mute); font-size:11.5px; white-space:nowrap }
+  .msg.trigger { background:var(--warnbg); border-left-color:var(--warn) !important; box-shadow:inset 0 0 0 1px #4a3a1a }
+  .msg.plan { background:var(--privbg); border-left-color:var(--priv) !important }
+  .tag { display:inline-block; font-size:10.5px; padding:1px 7px; border-radius:10px; margin-left:8px; vertical-align:1px; text-transform:uppercase; letter-spacing:.6px; font-weight:700 }
+  .tag.warn { background:var(--warn); color:#1a1200 } .tag.priv { background:var(--priv); color:#0a1226 } .tag.ok { background:var(--ok); color:#07130c }
+  .tag.gris { background:#2a3140; color:var(--dim) }
+
+  /* ---------- agente ---------- */
+  .caja { background:var(--panel2); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin-bottom:14px }
+  .caja h3 { margin:0 0 8px; font-size:12px; color:var(--dim); font-weight:700; text-transform:uppercase; letter-spacing:1px }
+  .plan li { margin:2px 0 } .plan .de { color:var(--mute); font-size:12px }
+  .embudo .fila { display:grid; grid-template-columns:150px 32px 1fr; gap:8px; align-items:center; font-size:12.5px; color:var(--dim); margin:3px 0 }
+  .embudo .fila b { text-align:right; font-variant-numeric:tabular-nums; color:var(--txt) }
+  .embudo .barra { height:8px; background:#2a3140; border-radius:4px } .embudo .fila.ok .barra { background:var(--ok) } .embudo .fila.ok { color:var(--ok) }
+  .filtros { display:flex; gap:6px; margin:4px 0 10px }
+  .dec { padding:7px 10px 7px 12px; border-left:3px solid var(--line); margin-bottom:6px; font-size:13px; color:var(--dim); border-radius:0 6px 6px 0 }
+  .dec .cab { display:flex; gap:8px; align-items:center } .dec .cab .cuando { margin-left:auto; color:var(--mute); font-size:11.5px }
+  .dec.anoto { border-left-color:var(--ok); background:var(--okbg); color:var(--txt) }
+  .dec.anoto .que { margin:4px 0 2px; font-style:italic; color:#cfd4dd }
+  .dec.anoto .meta { font-size:12px; color:var(--dim) } .dec.anoto .meta .fp { color:var(--warn) } .dec.anoto .meta .conf { color:var(--ok) }
+  .dec.hablo { border-left-color:var(--warn); background:var(--warnbg); color:var(--warn); font-weight:600 }
+  .dec.err { border-left-color:var(--bad) }
+  details summary { cursor:pointer; color:var(--mute); font-size:12px; margin-top:4px } details p { margin:4px 0 0; color:var(--dim); font-size:12.5px; border-left:2px solid var(--line); padding-left:8px }
+
+  /* ---------- privado ---------- */
+  .nada { color:var(--mute); text-align:center; padding:60px 20px; line-height:1.7 } .nada .g { font-size:34px; margin-bottom:10px }
+  .disparo { background:var(--warnbg); border:1px solid #4a3a1a; border-radius:10px; padding:10px 14px; margin-bottom:14px; font-size:13px }
+  .disparo b { color:var(--warn) } .disparo q { display:block; margin-top:4px; color:var(--txt) }
+  .dm { background:var(--privbg); border:1px solid #243354; border-radius:14px 14px 14px 4px; padding:16px 18px; position:relative }
+  .dm .de { font-size:12px; color:var(--priv); font-weight:700; letter-spacing:.5px; margin-bottom:10px; display:flex; align-items:center; gap:8px }
+  .dm .de .listo { margin-left:auto; color:var(--ok); font-weight:600 }
+  .dm p { margin:0 0 12px }
+  .b { display:grid; grid-template-columns:22px 1fr auto; gap:6px 8px; margin-bottom:11px; align-items:start }
+  .b .n { color:var(--dim) } .b .t { line-height:1.45 }
+  .b .acc { display:flex; gap:6px; align-items:center; white-space:nowrap } .b .acc a { font-size:12px; text-decoration:none } .b .acc a:hover { text-decoration:underline }
+  .b .acc button { color:var(--dim) } .b .acc button:hover { color:var(--bad); border-color:var(--bad) }
+  .b .ev { grid-column:2 / 4; font-size:12px; color:var(--mute); margin-top:-4px }
+  .b .ev q { color:var(--dim) }
+  .fp { color:var(--warn); font-size:12px; font-weight:600 }
+  .dm .pie { color:var(--dim); font-size:13px; border-top:1px solid #243354; padding-top:12px; margin-top:8px }
+  .dm .pie .cta { margin-top:12px; display:flex; gap:10px; align-items:center }
+  .dm .pie .cta small { color:var(--mute) }
+  .vacio { color:var(--mute); font-style:italic }
+  @media (max-width: 1100px) { main { grid-template-columns:1fr 1fr } section.privado { grid-column:1 / 3; border-top:1px solid var(--line) } }
+</style>
+</head>
+<body>
+
+<!-- Iconos: Boxicons 2.1.4, MIT. Vendorizados como sprite para no depender de un CDN:
+     si el wifi de la sede falla al cargar, la pantalla igual sale con iconos. -->
+<svg style="display:none" aria-hidden="true"><symbol id="i-group" viewBox="0 0 24 24"><path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"/><path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"/></symbol><symbol id="i-chip" viewBox="0 0 24 24"><path d="M9 9h6v6H9z"/><path d="M20 6c0-1.103-.897-2-2-2h-2V2h-2v2h-4V2H8v2H6c-1.103 0-2 .897-2 2v2H2v2h2v4H2v2h2v2c0 1.103.897 2 2 2h2v2h2v-2h4v2h2v-2h2c1.103 0 2-.897 2-2v-2h2v-2h-2v-4h2V8h-2V6zM6 18V6h12l.002 12H6z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zm6 10 .002 8H6v-8h12zm-9-2V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9z"/></symbol><symbol id="i-mute" viewBox="0 0 24 24"><path d="m21.707 20.293-2.023-2.023A9.566 9.566 0 0 0 21.999 12c0-4.091-2.472-7.453-5.999-9v2c2.387 1.386 3.999 4.047 3.999 7a8.113 8.113 0 0 1-1.672 4.913l-1.285-1.285C17.644 14.536 18 13.19 18 12c0-1.771-.775-3.9-2-5v7.586l-2-2V4a1 1 0 0 0-1.554-.832L7.727 6.313l-4.02-4.02-1.414 1.414 18 18 1.414-1.414zM12 5.868v4.718L9.169 7.755 12 5.868zM4 17h2.697l5.748 3.832a1.004 1.004 0 0 0 1.027.05A1 1 0 0 0 14 20v-1.879l-2-2v2.011l-4.445-2.964c-.025-.017-.056-.02-.082-.033a.986.986 0 0 0-.382-.116C7.059 15.016 7.032 15 7 15H4V9h.879L3.102 7.223A1.995 1.995 0 0 0 2 9v6c0 1.103.897 2 2 2z"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M7 6v12l10-6z"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"/></symbol><symbol id="i-reset" viewBox="0 0 24 24"><path d="M12 16c1.671 0 3-1.331 3-3s-1.329-3-3-3-3 1.331-3 3 1.329 3 3 3z"/><path d="M20.817 11.186a8.94 8.94 0 0 0-1.355-3.219 9.053 9.053 0 0 0-2.43-2.43 8.95 8.95 0 0 0-3.219-1.355 9.028 9.028 0 0 0-1.838-.18V2L8 5l3.975 3V6.002c.484-.002.968.044 1.435.14a6.961 6.961 0 0 1 2.502 1.053 7.005 7.005 0 0 1 1.892 1.892A6.967 6.967 0 0 1 19 13a7.032 7.032 0 0 1-.55 2.725 7.11 7.11 0 0 1-.644 1.188 7.2 7.2 0 0 1-.858 1.039 7.028 7.028 0 0 1-3.536 1.907 7.13 7.13 0 0 1-2.822 0 6.961 6.961 0 0 1-2.503-1.054 7.002 7.002 0 0 1-1.89-1.89A6.996 6.996 0 0 1 5 13H3a9.02 9.02 0 0 0 1.539 5.034 9.096 9.096 0 0 0 2.428 2.428A8.95 8.95 0 0 0 12 22a9.09 9.09 0 0 0 1.814-.183 9.014 9.014 0 0 0 3.218-1.355 8.886 8.886 0 0 0 1.331-1.099 9.228 9.228 0 0 0 1.1-1.332A8.952 8.952 0 0 0 21 13a9.09 9.09 0 0 0-.183-1.814z"/></symbol></svg>
+
+<header>
+  <div class="brand">
+    <h1>EL TESTIGO</h1>
+    <p>Vive en tu grupo. No habla. Se acuerda de lo que hiciste.</p>
+  </div>
+  <div class="controles">
+    <select id="vel">
+      <option value="15">rápido</option>
+      <option value="80" selected>ritmo de demo</option>
+      <option value="350">lento, para explicar</option>
+    </select>
+    <button id="replay" class="primary"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>Reproducir el mes</button>
+    <button id="reset"><svg class="ic" aria-hidden="true"><use href="#i-reset"/></svg>Reset</button>
+  </div>
+  <div class="contador">
+    <div><b id="leidos">0</b><span>mensajes leídos</span></div>
+    <div class="anoto"><b id="anotados">0</b><span>anotó en silencio</span></div>
+    <div class="hablo"><b id="hablo">0</b><span>veces que habló</span></div>
+  </div>
+</header>
+<div class="progreso"><div id="barra"></div></div>
+
+<div class="estado" id="estado"><div class="punto"></div><div><b>Esperando.</b> <span>Apretá «Reproducir el mes» para ver un mes del grupo pasar por el agente.</span></div></div>
+
+<main>
+  <section class="publico">
+    <h2><svg class="ic" aria-hidden="true"><use href="#i-group"/></svg> El grupo</h2>
+    <p class="sub">Telegram · público · todos lo ven · el agente solo lee, nunca escribe acá</p>
+    <div id="grupo" class="vacio">Sin mensajes todavía.</div>
+  </section>
+
+  <section class="agente">
+    <h2><svg class="ic" aria-hidden="true"><use href="#i-chip"/></svg> Adentro del agente</h2>
+    <p class="sub">Cada decisión, incluidas las de callarse. El 80% del trabajo es descartar.</p>
+    <div class="caja plan" id="plan"></div>
+    <div class="caja embudo" id="embudo"></div>
+    <div class="filtros">
+      <button class="mini on" data-f="todo">todas las decisiones</button>
+      <button class="mini" data-f="anoto">solo lo que anotó</button>
+    </div>
+    <div id="bitacora" class="vacio">Nada todavía.</div>
+  </section>
+
+  <section class="privado">
+    <h2><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg> Mensaje privado</h2>
+    <p class="sub">Solo lo ve la persona · nunca el jefe · nada sale sin que ella lo comparta</p>
+    <div id="dm"></div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[<>&"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]));
+const post = (u, b) => fetch(u, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(b || {}) });
+const params = new URLSearchParams(location.search);
+// El entregable cita los mensajes textualmente. Si el grupo real tiene una key
+// o una clave pegada, termina en camara. ?censurar=1 la tapa al mostrarla; no
+// cambia lo que el agente decidio, solo lo que se ve.
+const CENSURAR = params.get("censurar") === "1";
+const SECRETOS = [
+  /\b(sk|rk)-[A-Za-z0-9_-]{12,}/g,
+  /\btr_(dev|prod|stg)_sk_[A-Za-z0-9]{8,}/g,
+  /\b\d{8,10}:AA[A-Za-z0-9_-]{20,}/g,
+  /\bgh[pousr]_[A-Za-z0-9]{20,}/g,
+  /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g,
+  /(?<=\b(clave|contrase\u00f1a|password|pass|pwd)\b\s{0,2}[:=]?\s{0,2})[^\s,.;]{4,}/gi,
+];
+const tapar = (t) => CENSURAR ? SECRETOS.reduce((x, re) => x.replace(re, "█████"), String(t ?? "")) : t;
+let filtro = "todo";
+
+// Color estable por nombre y por hilo, para que se vea quién habla y cómo se agrupan los mensajes.
+const hue = (s) => { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) % 360; return h; };
+const colorAutor = (a) => `hsl(${hue(a)} 70% 72%)`;
+const colorHilo = (t) => `hsl(${hue(t)} 45% 38%)`;
+
+const fecha = (iso) => { const d = new Date(iso); return d.toLocaleDateString("es", { day: "numeric", month: "short" }) + " " + d.toTimeString().slice(0, 5); };
+const dia = (iso) => new Date(iso).toLocaleDateString("es", { day: "numeric", month: "short" });
+
+const TIPO = { resolvio: "resolvió", desbloqueo: "destrabó a alguien", decidio: "decidió", sostuvo: "sostuvo" };
+const MOTIVO = [
+  [/^hilo trivial/, "hilo trivial: puro «dale», «ok», stickers"],
+  [/^sin marca de trabajo hecho/, "nadie dijo que terminó algo"],
+  [/^el detector no vio/, "lo miró y no vio trabajo hecho"],
+  [/^confianza/, (m) => "no estaba seguro (" + m.replace("confianza ", "") + ")"],
+  [/^error del modelo/, (m) => "el modelo falló, siguió leyendo · " + m.slice(17)],
+  [/^DM no enviado/, (m) => m],
+  [/^redactor/, (m) => m],
+];
+const motivoHumano = (m) => { for (const [re, t] of MOTIVO) if (re.test(m)) return typeof t === "function" ? t(m) : t; return m; };
+const EMBUDO = [
+  ["hilo trivial", /^hilo trivial/],
+  ["nadie dijo que terminó algo", /^sin marca/],
+  ["miró y no vio trabajo", /^el detector no vio/],
+  ["no estaba seguro", /^confianza/],
+  ["el modelo falló", /^error del modelo/],
+];
+
+$("replay").onclick = () => post("/replay", { ...(params.get("archivo") ? { archivo: params.get("archivo") } : {}), ms: Number($("vel").value) });
+$("reset").onclick = () => post("/reset").then(() => pintar(true));
+document.querySelectorAll(".filtros button").forEach((b) => (b.onclick = () => { filtro = b.dataset.f; document.querySelectorAll(".filtros button").forEach((x) => x.classList.toggle("on", x === b)); pintar(true); }));
+window.borrar = (id) => fetch("/entregable/" + id, { method: "DELETE" }).then(() => pintar(true));
+window.compartir = () => post("/entregable/compartir").then(() => pintar(true));
+
+function narrar(s) {
+  const e = $("estado");
+  const ult = s.bitacora.at(-1);
+  let clase = "", titulo = "", detalle = "";
+  if (!s.leidos) { titulo = "Esperando."; detalle = "Apretá «Reproducir el mes» para ver un mes del grupo pasar por el agente."; }
+  else if (s.intervenciones > 0) { clase = "hablo"; titulo = "Habló. Una vez. En privado."; detalle = `Alguien mencionó el 1:1 en el grupo. Fue lo único que lo hizo hablar en ${s.leidos} mensajes.`; }
+  else if (ult && ult.tipo === "anotado") { clase = "leyendo"; titulo = "Anotó en silencio."; detalle = `${TIPO[ult.evidencia.tipo]} · «${ult.evidencia.que.slice(0, 80)}» · no dijo nada en el grupo.`; }
+  else if (s.replayEnCurso) { clase = "leyendo"; titulo = "Leyendo el grupo. No dice nada."; detalle = ult ? "última decisión: se calló, " + motivoHumano(ult.motivo) : "todavía no cerró ningún hilo."; }
+  else { titulo = "Terminó el mes sin hablar."; detalle = `Leyó ${s.leidos} mensajes, anotó ${s.anotados}. Nadie mencionó el 1:1.`; }
+  e.className = "estado " + clase;
+  e.innerHTML = `<div class="punto"></div><div><b>${esc(titulo)}</b> <span>${esc(detalle)}</span></div>`;
+}
+
+function pintarGrupo(s) {
+  const g = $("grupo");
+  const cont = g.parentElement;
+  // Si subio a mirar un mensaje, no se lo tironea de vuelta abajo.
+  const pegadoAbajo = cont.scrollHeight - cont.scrollTop - cont.clientHeight < 90;
+  g.className = s.ultimos.length ? "" : "vacio";
+  if (!s.ultimos.length) return (g.textContent = "Sin mensajes todavía.");
+  const planMsg = s.plan[0]?.mensaje_id;
+  g.innerHTML = s.ultimos.map((m) => {
+    const esT = s.disparador && m.id === s.disparador.id, esP = m.id === planMsg;
+    return `<div class="msg${esT ? " trigger" : esP ? " plan" : ""}" style="border-left-color:${colorHilo(m.thread_id)}">
+      <span class="quien" style="color:${colorAutor(m.autor)}">${esc(m.autor)}</span>
+      <span class="texto">${esc(tapar(m.texto))}${esT ? '<span class="tag warn">esto lo despertó</span>' : esP ? '<span class="tag priv">de acá sacó el plan</span>' : ""}</span>
+      <span class="hora">${fecha(m.ts)}</span></div>`;
+  }).join("");
+  if (s.replayEnCurso && pegadoAbajo) cont.scrollTop = cont.scrollHeight;
+}
+
+function pintarAgente(s) {
+  $("plan").innerHTML = s.plan.length
+    ? `<h3>El plan del mes <span class="de">· lo dijo alguien en el grupo, el agente lo leyó</span></h3><ul style="margin:0;padding-left:18px">${s.plan.map((p) => `<li>${esc(p.texto)}</li>`).join("")}</ul>`
+    : `<h3>El plan del mes</h3><span class="vacio">Todavía no apareció. Lo saca del primer mensaje que enumera objetivos.</span>`;
+
+  const desc = s.bitacora.filter((d) => d.tipo === "descartado");
+  const filas = EMBUDO.map(([n, re]) => [n, desc.filter((d) => re.test(d.motivo)).length]).filter(([, c]) => c);
+  const max = Math.max(1, ...filas.map(([, c]) => c), s.anotados);
+  $("embudo").innerHTML = `<h3>Por qué se calló</h3>` + (s.bitacora.length
+    ? filas.map(([n, c]) => `<div class="fila"><span>${n}</span><b>${c}</b><div class="barra" style="width:${(c / max) * 100}%"></div></div>`).join("")
+      + `<div class="fila ok"><span>anotó en silencio</span><b>${s.anotados}</b><div class="barra" style="width:${(s.anotados / max) * 100}%"></div></div>`
+    : `<span class="vacio">Sin hilos cerrados todavía.</span>`);
+
+  const b = $("bitacora");
+  // Quien tenia la cita abierta sigue abierta despues del repintado.
+  const abiertos = new Set([...b.querySelectorAll("details[open]")].map((d) => d.dataset.ev));
+  const lista = [...s.bitacora].reverse().filter((d) => filtro === "todo" || d.tipo !== "descartado");
+  b.className = lista.length ? "" : "vacio";
+  if (!lista.length) return (b.textContent = filtro === "todo" ? "Nada todavía." : "Todavía no anotó nada.");
+  b.innerHTML = lista.map((d) => {
+    if (d.tipo === "anotado") {
+      const e = d.evidencia, [que, conf] = e.que.split(" — ");
+      return `<div class="dec anoto"><div class="cab"><span class="tag ok">anotó</span><span>${TIPO[e.tipo] || e.tipo}</span><span class="cuando">${dia(e.cuando + "T12:00:00")}</span></div>
+        <div class="que">«${esc(tapar(que))}»</div>
+        <div class="meta">${conf ? esc(conf) + " · " : ""}<span class="conf">confianza ${e.confianza.toFixed(2)}</span>${e.no_estaba_en_plan ? ' · <span class="fp">no estaba en el plan</span>' : ""}</div>
+        <details data-ev="${esc(e.id)}"${abiertos.has(e.id) ? " open" : ""}><summary>ver la cita que lo prueba</summary><p>${esc(tapar(e.cita))}</p></details></div>`;
+    }
+    if (d.tipo === "hablo") return `<div class="dec hablo"><div class="cab"><span class="tag warn">habló</span><span>${esc(d.motivo)}</span></div></div>`;
+    return `<div class="dec${/^error|^DM no/.test(d.motivo) ? " err" : ""}"><div class="cab"><span class="tag gris">se calló</span><span>${esc(motivoHumano(d.motivo))}</span><span class="cuando">${dia(d.ts)}</span></div></div>`;
+  }).join("");
+}
+
+function pintarDM(s) {
+  const e = s.entregable;
+  if (!e) return ($("dm").innerHTML = `<div class="nada"><div class="g"><svg width="36" height="36" fill="currentColor" aria-hidden="true"><use href="#i-mute"/></svg></div><b>Todavía no habló.</b><br>Habla una sola vez: cuando alguien menciona el 1:1 en el grupo.<br>Nadie le escribe. Nadie le pide nada.</div>`);
+  const cita = (id) => s.evidencias.find((x) => x.id === id)?.cita;
+  const d = s.disparador;
+  $("dm").innerHTML = (d ? `<div class="disparo"><b>Lo despertó un mensaje del grupo</b> · ${esc(d.autor)}, ${fecha(d.ts)}<q>${esc(tapar(d.texto))}</q></div>` : "") +
+  `<div class="dm">
+    <div class="de"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg> EL TESTIGO → ${esc(e.persona)} · privado${e.compartido ? '<span class="listo"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> listo para compartir · no se mandó a nadie</span>' : ""}</div>
+    <p>Esto es lo que hiciste entre el ${esc(e.periodo.replace(" a ", " y el "))}.</p>
+    ${e.bullets.length ? e.bullets.map((x, i) => `<div class="b"><span class="n">${i + 1}.</span><span class="t">${esc(tapar(x.texto.split(" — ")[0]))}${x.fuera_de_plan ? ' <span class="fp">· no estaba en tu plan</span>' : ""}</span>
+      <span class="acc"><a href="${esc(x.link)}" target="_blank" rel="noopener">ver mensaje ↗</a><button class="mini" title="No fue así. Borrar." onclick="borrar('${esc(x.evidencia_id)}')"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></span>
+      ${cita(x.evidencia_id) ? `<div class="ev">evidencia: <q>${esc(tapar(cita(x.evidencia_id)))}</q>${x.texto.includes(" — ") ? " · " + esc(x.texto.split(" — ")[1]) : ""}</div>` : ""}</div>`).join("")
+      : `<p class="vacio">Borraste todo. Queda vacío: es tu registro.</p>`}
+    ${e.fuera_de_plan.length ? `<p><b>${e.fuera_de_plan.length} de estas no estaban en tu plan.</b> Por eso no llegaste a lo otro.</p>` : ""}
+    <div class="pie">Leí ${e.leidos} mensajes. Anoté ${e.anotados}. Hablé una vez: esta.<br>Si algo no fue así, borralo. Nada sale de acá sin que vos lo compartas.
+      ${e.compartido ? "" : `<div class="cta"><button class="primary" onclick="compartir()">Compartir</button><small>hoy no manda nada a nadie: existe para que se vea que la decisión es tuya</small></div>`}</div>
+  </div>`;
+}
+
+// Repintar con innerHTML 4 veces por segundo cerraba los <details> de las citas
+// apenas se abrian, y cortaba cualquier seleccion de texto. Solo se repinta si
+// el estado cambio de verdad.
+let firma = "";
+let caido = false;
+
+// /state manda solo bitacora.slice(-80). En un mes entero las anotaciones
+// ocurren temprano y se caen de esa ventana: al terminar el replay la columna
+// del medio quedaba sin una sola cita. Se acumulan del lado del navegador.
+let bitAcum = [];
+let leidosPrev = -1;
+const claveBit = (d) => d.tipo === "anotado" ? "e:" + d.evidencia.id : `${d.tipo}|${d.ts}|${d.motivo}`;
+function acumular(recibida, leidos) {
+  if (leidos < leidosPrev) bitAcum = [];   // reset o replay nuevo
+  leidosPrev = leidos;
+  const vistos = new Set(bitAcum.map(claveBit));
+  for (const d of recibida) if (!vistos.has(claveBit(d))) bitAcum.push(d);
+  return bitAcum;
+}
+
+const num = (n) => Number(n ?? 0).toLocaleString("es");
+
+async function pintar(forzar) {
+  let s;
+  try {
+    s = await (await fetch("/state", { cache: "no-store" })).json();
+  } catch {
+    if (!caido) { caido = true; firma = ""; $("estado").innerHTML = '<div class="punto"></div><div><b>Servidor caido.</b> <span>No responde /state. Revisa la terminal de <code>npm run dev</code>.</span></div>'; }
+    return;
+  }
+  if (caido) { caido = false; forzar = true; }
+
+  s.bitacora = acumular(s.bitacora, s.leidos);
+
+  const nueva = JSON.stringify([
+    s.leidos, s.anotados, s.intervenciones, s.bitacora.length, s.plan.length,
+    s.ultimos.at(-1)?.id, s.disparador?.id, s.replayEnCurso, s.total,
+    s.entregable?.bullets.length, s.entregable?.compartido, filtro,
+  ]);
+  if (!forzar && nueva === firma) return;
+  firma = nueva;
+
+  $("leidos").textContent = num(s.leidos);
+  $("anotados").textContent = num(s.anotados);
+  $("hablo").textContent = num(s.intervenciones);
+  $("barra").style.width = s.total ? (s.leidos / s.total) * 100 + "%" : "0%";
+  narrar(s); pintarGrupo(s); pintarAgente(s); pintarDM(s);
+}
+pintar(true);
+setInterval(pintar, 250);
+</script>
+</body>
+</html>
