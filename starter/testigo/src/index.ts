@@ -28,6 +28,9 @@ const ARCHIVO_DEFAULT = ["data/agosto.jsonl", "data/seed.jsonl", "data/ejemplo.j
 const aqui = dirname(fileURLToPath(import.meta.url));
 
 let estado: Estado = nuevoEstado(PERSONA);
+
+// Red de seguridad para el demo: un rechazo sin catch no puede apagar el bot en medio del video.
+process.on("unhandledRejection", (e) => console.error("rechazo sin manejar (sigo vivo):", String((e as Error)?.message ?? e).slice(0, 200)));
 let replayEnCurso = false;
 let cancelarReplay = false;
 let totalReplay = 0;
@@ -90,7 +93,27 @@ if (bot) {
       await hablar(estado, m, redactar, enviar);
     }
   });
-  bot.start({ onStart: (me) => console.log(`bot @${me.username} escuchando el grupo (long polling)`) });
+  // El polling puede caerse (409 si hay otra instancia con el mismo token, red, Telegram).
+  // Nada de eso puede tumbar el proceso en el demo: se loguea y se reintenta solo.
+  const arrancarBot = (): void => {
+    bot
+      .start({
+        // Lo que llego mientras estuvo caido no se procesa: son mensajes viejos.
+        drop_pending_updates: true,
+        onStart: (me) => console.log(`bot @${me.username} escuchando el grupo (long polling)`),
+      })
+      .catch(async (err: unknown) => {
+        const msg = String((err as Error)?.message ?? err);
+        if (msg.includes("409")) {
+          console.error("BOT: hay OTRA instancia corriendo con el mismo token (laptop? otro server?). Matala. Reintento en 15s.");
+        } else {
+          console.error(`BOT: se cayo el polling: ${msg.slice(0, 160)}. Reintento en 15s.`);
+        }
+        await bot.stop().catch(() => {});
+        setTimeout(arrancarBot, 15_000);
+      });
+  };
+  arrancarBot();
 
   // En vivo un hilo tambien se cierra por tiempo: QUIETUD_MIN minutos sin actividad.
   // Sin esto, en un grupo real "anoto en silencio" recien aparece cuando llegan 6 mensajes mas.
